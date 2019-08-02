@@ -29,7 +29,7 @@ public class Station : MonoBehaviour
     }
 
     void Update(){
-        RecipeCheck();
+        
     }
 
     
