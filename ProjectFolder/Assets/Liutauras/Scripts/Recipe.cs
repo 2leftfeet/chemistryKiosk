@@ -5,6 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ChemistryKiosk/Recipe")]
 public class Recipe : ScriptableObject
 {
+
+    public string formula;
     [SerializeField]
     public List<Ingredient> inputIngredients;
 

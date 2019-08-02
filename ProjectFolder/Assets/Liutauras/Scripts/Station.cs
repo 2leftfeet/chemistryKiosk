@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum StationType{
-    KippsApparatus,
-    Distilator,
+public enum StationType
+{
     HeatingPad,
     ElectrolysisStation,
-    GasLamp,
     GasCollector,
-    Mixer,
     BuchnerFunnel,
-    MuffleFurnace
+    MuffleFurnace,
+    SimpleTestTube
 }
 
 public class Station : MonoBehaviour
@@ -29,7 +27,7 @@ public class Station : MonoBehaviour
     }
 
     void Update(){
-        RecipeCheck();
+        
     }
 
     

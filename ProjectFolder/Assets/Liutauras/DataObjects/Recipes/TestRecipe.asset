@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3c4b62b5a1a6e4d82b9ec95a3a07ed, type: 3}
   m_Name: TestRecipe
   m_EditorClassIdentifier: 
+  inputIngredients: []
+  outputIngredients:
+  - {fileID: 0}
+  stationToUse: 8
