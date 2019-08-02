@@ -9,7 +9,8 @@ public enum StationType
     GasCollector,
     BuchnerFunnel,
     MuffleFurnace,
-    SimpleTestTube
+    SimpleTestTube,
+    CoolingBath
 }
 
 public class Station : MonoBehaviour
@@ -54,6 +55,7 @@ public class Station : MonoBehaviour
         return null;
     }
 
+    [ContextMenu("Check for Recipe")]
     void RecipeCheck(){
         foreach(Recipe r in recipeHolder.allRecipes){
             bool recipeCorrect = true;
