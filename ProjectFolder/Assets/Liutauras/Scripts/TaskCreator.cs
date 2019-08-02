@@ -14,12 +14,17 @@ public class TaskCreator : MonoBehaviour
 
     void Start()
     {
-        while(waiter > 0.0f){
+        currentTasks = new List<Task>();
+    }
+
+    void Update()
+    {
+        if(waiter > 0.0f){
             waiter -= Time.deltaTime;
         }
         if(waiter <= 0.0f){
-            CreateTask();
             waiter = Random.Range(minWaitTime, maxWaitTime);
+            CreateTask();
         }
     }
 
