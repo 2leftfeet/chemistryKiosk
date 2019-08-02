@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "ChemistryKiosk/Recipe")]
 public class Recipe : ScriptableObject
 {
     [SerializeField]
@@ -10,5 +10,7 @@ public class Recipe : ScriptableObject
 
     [SerializeField]
     List<Ingredient> outputIngredients;
+
+    public StationType stationToUse;
 
 }
