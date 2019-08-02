@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3c4b62b5a1a6e4d82b9ec95a3a07ed, type: 3}
   m_Name: Fertilizer(Urea)_Step1
   m_EditorClassIdentifier: 
-  formula: 
-  inputIngredients: []
-  outputIngredients: []
-  stationToUse: 0
+  formula: CO + Cl_2- -> COCl_2-
+  inputIngredients:
+  - {fileID: 11400000, guid: 04535356dcda9f94ab433adc0bdd04ae, type: 2}
+  - {fileID: 11400000, guid: d60152cfd3caab14bb76800ff01d76f8, type: 2}
+  outputIngredients:
+  - {fileID: 11400000, guid: 827c85eea54de024ab4f5348b2b0cad2, type: 2}
+  stationToUse: 8

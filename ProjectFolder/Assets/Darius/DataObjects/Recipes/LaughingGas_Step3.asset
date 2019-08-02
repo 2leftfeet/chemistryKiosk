@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3c4b62b5a1a6e4d82b9ec95a3a07ed, type: 3}
   m_Name: LaughingGas_Step3
   m_EditorClassIdentifier: 
-  formula: 
-  inputIngredients: []
-  outputIngredients: []
-  stationToUse: 0
+  formula: NaNO_3- (substance) -> NaNO_3- (solid)
+  inputIngredients:
+  - {fileID: 11400000, guid: 703e38d49bf89f845a0871d13dfab13b, type: 2}
+  outputIngredients:
+  - {fileID: 11400000, guid: c4c9fc321005538458a17a984ba9e75f, type: 2}
+  stationToUse: 4

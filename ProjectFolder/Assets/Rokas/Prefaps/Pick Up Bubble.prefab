@@ -194,11 +194,11 @@ MonoBehaviour:
   secondaryImage: {fileID: 2344836915836047792}
   liquid: {fileID: 21300000, guid: f51c11579c21eee4dacdfbeb230b7380, type: 3}
   liquidSec: {fileID: 21300000, guid: 097cd33f2696239409eb52ea1c2b3316, type: 3}
-  solid: {fileID: 0}
-  solidSec: {fileID: 0}
-  gas: {fileID: 0}
-  gasSec: {fileID: 0}
-  ing: {fileID: 11400000, guid: 399da4e0ee095634887c218c3f2aaa4d, type: 2}
+  solid: {fileID: 21300000, guid: 3891ea763a5ca4f41bf99a20dfa2337e, type: 3}
+  solidSec: {fileID: 21300000, guid: 723320d1dcb276747a3a63fbd40ea482, type: 3}
+  gas: {fileID: 21300000, guid: 6e4363b13529da041ac25b2a32e7a5a9, type: 3}
+  gasSec: {fileID: 21300000, guid: 169dade8c32a95143aee22ebb6a360c2, type: 3}
+  ing: {fileID: 11400000, guid: 84d8808fc3a0ae24cbb7337caa1e5175, type: 2}
   formula: {fileID: 2344836915637772729}
 --- !u!1 &2344836915637772730
 GameObject:
