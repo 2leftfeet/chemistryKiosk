@@ -55,6 +55,7 @@ public class Station : MonoBehaviour
         return null;
     }
 
+    [ContextMenu("Check for Recipe")]
     void RecipeCheck(){
         foreach(Recipe r in recipeHolder.allRecipes){
             bool recipeCorrect = true;
