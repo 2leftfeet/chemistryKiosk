@@ -10,7 +10,8 @@ public enum StationType
     BuchnerFunnel,
     MuffleFurnace,
     SimpleTestTube,
-    CoolingBath
+    CoolingBath,
+    HeatingLamp
 }
 
 public class Station : MonoBehaviour

@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a3c4b62b5a1a6e4d82b9ec95a3a07ed, type: 3}
-  m_Name: Bleach_step2
+  m_Name: Bleach_Step2
   m_EditorClassIdentifier: 
-  formula: 
-  inputIngredients: []
-  outputIngredients: []
-  stationToUse: 0
+  formula: NaOH(diluted)
+  inputIngredients:
+  - {fileID: 11400000, guid: 4c4118ea30417584683366761392601c, type: 2}
+  - {fileID: 11400000, guid: 399da4e0ee095634887c218c3f2aaa4d, type: 2}
+  outputIngredients:
+  - {fileID: 11400000, guid: 36ad94a15e85787469b752af4f46b567, type: 2}
+  stationToUse: 5
