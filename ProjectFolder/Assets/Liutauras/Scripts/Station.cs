@@ -11,7 +11,9 @@ public enum StationType
     MuffleFurnace,
     SimpleTestTube,
     CoolingBath,
-    HeatingLamp
+    HeatingLamp,
+    PorousBedOfActivatedCarbon,
+    GasInputter
 }
 
 public class Station : MonoBehaviour

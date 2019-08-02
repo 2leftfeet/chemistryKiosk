@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3c4b62b5a1a6e4d82b9ec95a3a07ed, type: 3}
   m_Name: LaughingGas_Step4
   m_EditorClassIdentifier: 
-  formula: 
-  inputIngredients: []
-  outputIngredients: []
-  stationToUse: 0
+  formula: (NH_4-)_2-SO_4- (substance) -> (NH_4-)_2-SO_4- (solid)
+  inputIngredients:
+  - {fileID: 11400000, guid: 28bc4d7969f0c7c41879426d331ecd7b, type: 2}
+  outputIngredients:
+  - {fileID: 11400000, guid: 00bf99a8e17ae754195bfd2a6acf7aac, type: 2}
+  stationToUse: 4
