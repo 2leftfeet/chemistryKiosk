@@ -10,7 +10,8 @@ public enum StationType
     BuchnerFunnel,
     MuffleFurnace,
     SimpleTestTube,
-    CoolingBath
+    CoolingBath,
+    HeatingLamp
 }
 
 public class Station : MonoBehaviour
@@ -44,8 +45,8 @@ public class Station : MonoBehaviour
     }
 
     public Ingredient RemoveIngredient(){
-        for(int i = slotCount; i >= 0; i--){
-            if(ingredientSlots[i] != null){
+        for(int i = slotCount -1; i >= 0; i--){
+            if(ingredientSlots[i]){
                 Ingredient toReturn = ingredientSlots[i];
                 ingredientSlots[i] = null;
                 return toReturn;
@@ -55,6 +56,7 @@ public class Station : MonoBehaviour
         return null;
     }
 
+    [ContextMenu("Check for Recipe")]
     void RecipeCheck(){
         foreach(Recipe r in recipeHolder.allRecipes){
             bool recipeCorrect = true;
