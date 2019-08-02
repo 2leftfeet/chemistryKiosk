@@ -2,10 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Task : ScriptableObject
+public class Task : MonoBehaviour
 {
-    public Ingredient endResult;
-    public float baseTime;
-    public GameObject customerPrefab;
+    public TaskData taskData;
+    private float timeLeft;
+    private Ingredient toMake;
+
+
+    void Start(){
+        timeLeft = taskData.baseTime;
+        toMake = taskData.endProduct;
+    }
+    void Update(){
+        timeLeft -= Time.deltaTime;
+    }
 
 }
