@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a3c4b62b5a1a6e4d82b9ec95a3a07ed, type: 3}
-  m_Name: LaughingGas_Step5
+  m_Name: Fertilizer(Urea)_Step2
   m_EditorClassIdentifier: 
-  formula: NaNO_3- + (NH_4-)_2-SO_4- -> Na_2-SO_4- + N_2-O + H_2-O
+  formula: COCl_2- + NH_3- -> (NH_2-)_2-CO
   inputIngredients:
-  - {fileID: 11400000, guid: c4c9fc321005538458a17a984ba9e75f, type: 2}
-  - {fileID: 11400000, guid: 00bf99a8e17ae754195bfd2a6acf7aac, type: 2}
+  - {fileID: 11400000, guid: 827c85eea54de024ab4f5348b2b0cad2, type: 2}
+  - {fileID: 11400000, guid: 7e7c769451f97f647980bdef1f2ca5ee, type: 2}
   outputIngredients:
-  - {fileID: 11400000, guid: 7bfa5e9ef60444b41a3daf3f559c1f72, type: 2}
-  stationToUse: 7
+  - {fileID: 11400000, guid: 51a6f03cafd61314181e53f81633c26c, type: 2}
+  stationToUse: 9

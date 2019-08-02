@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3c4b62b5a1a6e4d82b9ec95a3a07ed, type: 3}
   m_Name: PrussianBlue_Step3
   m_EditorClassIdentifier: 
-  formula: 
-  inputIngredients: []
-  outputIngredients: []
-  stationToUse: 0
+  formula: Fe_4-[Fe(CN)_6-]_3(solid) -> Fe_4-[Fe(CN)_6-]_3(powder)
+  inputIngredients:
+  - {fileID: 11400000, guid: b0eb4e997e66ba94bbed1648d4bc3445, type: 2}
+  outputIngredients:
+  - {fileID: 11400000, guid: d91d5111b9cad4d4290289fba34288f1, type: 2}
+  stationToUse: 4
