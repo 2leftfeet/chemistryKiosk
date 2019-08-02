@@ -21,9 +21,13 @@ public class BubbleHandler : MonoBehaviour
     private State state;
     private Color ingColor;
 
+    public TMP_Text formula;
+
     private void Start()
     {
+        formula.text = FormulaHandler.Convert(ing.id);
         state = ing.state;
+        ingColor = ing.color;
         switch (state)
         {
             case State.Gas:

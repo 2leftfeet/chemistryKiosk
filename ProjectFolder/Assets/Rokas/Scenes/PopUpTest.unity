@@ -150,12 +150,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1229786210}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.65, y: -7.52}
-  m_SizeDelta: {x: 31.722, y: 31.722}
+  m_AnchoredPosition: {x: 0, y: -6}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &140959831
 CanvasRenderer:
@@ -383,8 +383,8 @@ RectTransform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children:
   - {fileID: 1390162680}
-  - {fileID: 140959830}
   - {fileID: 1730112017}
+  - {fileID: 140959830}
   - {fileID: 1399970329}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -408,13 +408,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainImage: {fileID: 140959832}
   secondaryImage: {fileID: 1730112018}
-  liquid: {fileID: 21300000, guid: 097cd33f2696239409eb52ea1c2b3316, type: 3}
-  liquidSec: {fileID: 21300000, guid: f51c11579c21eee4dacdfbeb230b7380, type: 3}
+  liquid: {fileID: 21300000, guid: f51c11579c21eee4dacdfbeb230b7380, type: 3}
+  liquidSec: {fileID: 21300000, guid: 097cd33f2696239409eb52ea1c2b3316, type: 3}
   solid: {fileID: 0}
   solidSec: {fileID: 0}
   gas: {fileID: 0}
   gasSec: {fileID: 0}
-  ing: {fileID: 0}
+  ing: {fileID: 11400000, guid: 399da4e0ee095634887c218c3f2aaa4d, type: 2}
+  formula: {fileID: 1399970331}
 --- !u!1 &1390162679
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,7 +502,6 @@ GameObject:
   - component: {fileID: 1399970329}
   - component: {fileID: 1399970332}
   - component: {fileID: 1399970331}
-  - component: {fileID: 1399970330}
   m_Layer: 5
   m_Name: Formula
   m_TagString: Untagged
@@ -528,18 +528,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 23.2}
   m_SizeDelta: {x: 52.03, y: 13.01}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1399970330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1399970328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87ba04b5401807b42b85600f05b5150c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1399970331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,12 +761,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1229786210}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -6.6}
-  m_SizeDelta: {x: 34.81, y: 34.81}
+  m_AnchoredPosition: {x: 0, y: -6}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1730112018
 MonoBehaviour:
