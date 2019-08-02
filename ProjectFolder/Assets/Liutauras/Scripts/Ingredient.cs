@@ -16,12 +16,13 @@ public enum Concentration{
     None
 }
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "ChemistryKiosk/Ingredient")]
 public class Ingredient : ScriptableObject
 {
-    public string name;
+    public string id;
     public Color color;
     public Concentration concentration;
     public State state;
+    public bool craftable;
 
 }
