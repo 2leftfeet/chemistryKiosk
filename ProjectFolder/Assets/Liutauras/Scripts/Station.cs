@@ -16,16 +16,83 @@ public enum StationType{
 
 public class Station : MonoBehaviour
 {
-    private StationType stationType;    
-    [SerializeField] private int inputSlotCount = 2;
-    [SerializeField] private int outputSlotCount = 2;
+    public RecipeHolder recipeHolder;
 
-    private Ingredient[] inputIngredients;
-    private Ingredient[] outputIngredients;
+    public StationType stationType;    
+    [SerializeField] private int slotCount = 2;
+
+    public Ingredient[] ingredientSlots;
+    
 
     void Start(){
-        inputIngredients = new Ingredient[inputSlotCount];
-        outputIngredients = new Ingredient[outputSlotCount];
+        ingredientSlots = new Ingredient[slotCount];
+    }
+
+    void Update(){
+        RecipeCheck();
+    }
+
+    
+
+    public void AddIngredient(Ingredient ingredient){
+        for(int i = 0; i < slotCount; i++){
+            if(ingredientSlots[i] == null){
+                ingredientSlots[i] = ingredient;
+                break;
+            }
+        }
+        RecipeCheck();
+    }
+
+    public Ingredient RemoveIngredient(){
+        for(int i = slotCount; i >= 0; i--){
+            if(ingredientSlots[i] != null){
+                Ingredient toReturn = ingredientSlots[i];
+                ingredientSlots[i] = null;
+                return toReturn;
+            }
+        }
+        RecipeCheck();
+        return null;
+    }
+
+    void RecipeCheck(){
+        foreach(Recipe r in recipeHolder.allRecipes){
+            bool recipeCorrect = true;
+            if(r.stationToUse == stationType){
+                Debug.Log("Testing recipe" + r.name);
+                foreach(Ingredient ingredient in r.inputIngredients){
+                    Debug.Log("Searching for ingredient" + ingredient.name);
+                    bool contains = false;
+                    for(int i = 0; i < slotCount; i++){
+                        if(ingredientSlots[i] == ingredient){
+                            contains = true;
+                            Debug.Log("ingredient found");
+                            break;
+                        }
+                    }
+                    if(!contains){
+                    recipeCorrect = false;
+                    Debug.Log("ingredient not found");    
+                    } 
+                }
+            }else{
+                recipeCorrect = false;
+            }
+            if(recipeCorrect) ConvertIngredients(r);
+        }
+    }
+
+    void ConvertIngredients(Recipe r){
+        for(int i = 0; i < slotCount; i++){
+            ingredientSlots[i] = null;
+        }
+
+        int j = 0;
+        foreach(Ingredient ingredient in r.outputIngredients){
+            ingredientSlots[j] = ingredient;
+            j++;
+        }
     }
     
 }
