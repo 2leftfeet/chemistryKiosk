@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3c4b62b5a1a6e4d82b9ec95a3a07ed, type: 3}
   m_Name: Bleach_Step1
   m_EditorClassIdentifier: 
+
   formula: 2Na + 2H_2-O -> 2NaOH + H_2-
   inputIngredients:
   - {fileID: 11400000, guid: 84d8808fc3a0ae24cbb7337caa1e5175, type: 2}
