@@ -34,14 +34,17 @@ public class Station : MonoBehaviour
 
     
 
-    public void AddIngredient(Ingredient ingredient){
+    public bool AddIngredient(Ingredient ingredient){
+        bool added = false;
         for(int i = 0; i < slotCount; i++){
             if(ingredientSlots[i] == null){
                 ingredientSlots[i] = ingredient;
+                added = true;
                 break;
             }
         }
         RecipeCheck();
+        return added;
     }
 
     public Ingredient RemoveIngredient(){

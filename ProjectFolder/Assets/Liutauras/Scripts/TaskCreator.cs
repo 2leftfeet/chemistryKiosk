@@ -17,7 +17,7 @@ public class TaskCreator : MonoBehaviour
         while(waiter > 0.0f){
             waiter -= Time.deltaTime;
         }
-        if(waiter < 0.0f){
+        if(waiter <= 0.0f){
             CreateTask();
             waiter = Random.Range(minWaitTime, maxWaitTime);
         }
@@ -27,7 +27,9 @@ public class TaskCreator : MonoBehaviour
         int taskIdx = Random.Range(0, availableTasks.tasks.Count);
         TaskData toCreate = availableTasks.tasks[taskIdx];
         GameObject newTask = new GameObject();
-        newTask.AddComponent<Task>();
+        Task addedTask = newTask.AddComponent<Task>();
+        addedTask.taskData = toCreate;
         newTask.transform.parent = this.gameObject.transform;
+        currentTasks.Add(addedTask);
     }
 }
