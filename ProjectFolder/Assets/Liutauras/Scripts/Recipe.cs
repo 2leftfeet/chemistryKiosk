@@ -6,10 +6,10 @@ using UnityEngine;
 public class Recipe : ScriptableObject
 {
     [SerializeField]
-    List<Ingredient> inputIngredients;
+    public List<Ingredient> inputIngredients;
 
     [SerializeField]
-    List<Ingredient> outputIngredients;
+    public List<Ingredient> outputIngredients;
 
     public StationType stationToUse;
 
