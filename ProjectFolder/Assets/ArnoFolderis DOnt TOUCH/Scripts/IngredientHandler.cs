@@ -36,7 +36,7 @@ public class IngredientHandler : MonoBehaviour
         ChangeShape(ingredientDatainstance);
     }
 
-    bool DEBUG = true;
+    bool DEBUG = false;
     int DEBUG_CYCLING = 0;
 
     void Update()
