@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ArnoFolderis DOnt TOUCH/movementScene.unity
-    guid: 854fa3fd569537a418f709770016a714
+    path: Assets/Rokas/Scenes/StartMenu.unity
+    guid: c2b62162d5068794289f0bd2805d41e9
+  - enabled: 1
+    path: Assets/Rokas/Scenes/JoinUI.unity
+    guid: 91a5c9498220282459cf9a7b5154d7bb
   - enabled: 1
     path: Assets/Liutauras/Scenes/LiutaurasTestScene.unity
     guid: d6861801b9f907c4bb5d2f80b80ab85c
