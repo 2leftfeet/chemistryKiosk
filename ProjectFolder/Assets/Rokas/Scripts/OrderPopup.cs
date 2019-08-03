@@ -34,6 +34,7 @@ public class OrderPopup : MonoBehaviour
     }
     void UpdatePopup(float currentTime, float maxTime)
     {
-        image.color = grad.Evaluate(currentTime/maxTime);       
+        image.color = grad.Evaluate(currentTime/maxTime);
+        
     }
 }
