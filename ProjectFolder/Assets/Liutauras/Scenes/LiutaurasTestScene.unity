@@ -5918,6 +5918,8 @@ GameObject:
   - component: {fileID: 775774392}
   - component: {fileID: 775774394}
   - component: {fileID: 775774393}
+  - component: {fileID: 775774396}
+  - component: {fileID: 775774395}
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Untagged
@@ -5968,6 +5970,52 @@ MonoBehaviour:
   slotCount: 1
   conveyorCounter: 1
   isInTheScene: 0
+--- !u!33 &775774395
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775774391}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &775774396
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775774391}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 8496038611943446938, guid: f126749f9e5cc6f4ab444d28b2a17f35, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1001 &777829696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7032,6 +7080,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 913569308}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &930511923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6500780476251656263, guid: 48ece4621301ec549b4488c6d56e353a,
+    type: 3}
+  m_PrefabInstance: {fileID: 685454407818193017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &930511924
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930511923}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fe478cc66c940954b81756daa3feb6e3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &937676959
 GameObject:
   m_ObjectHideFlags: 0
