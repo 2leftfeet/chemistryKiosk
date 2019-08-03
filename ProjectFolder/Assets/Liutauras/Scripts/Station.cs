@@ -76,20 +76,16 @@ public class Station : MonoBehaviour, IHoldsIngredient
         foreach (Recipe r in recipeHolder.allRecipes) {
             bool recipeCorrect = true;
             if (r.stationToUse == stationType) {
-                Debug.Log("Testing recipe" + r.name);
                 foreach (Ingredient ingredient in r.inputIngredients) {
-                    Debug.Log("Searching for ingredient" + ingredient.name);
                     bool contains = false;
                     for (int i = 0; i < slotCount; i++) {
                         if (ingredientSlots[i] == ingredient) {
                             contains = true;
-                            Debug.Log("ingredient found");
                             break;
                         }
                     }
                     if (!contains) {
                         recipeCorrect = false;
-                        Debug.Log("ingredient not found");
                     }
                 }
             } else {
