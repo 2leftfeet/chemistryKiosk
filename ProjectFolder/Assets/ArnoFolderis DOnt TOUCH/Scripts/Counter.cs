@@ -58,17 +58,25 @@ public class Counter : MonoBehaviour, IHoldsIngredient
         }
         //add UI hook
         //UpdateBubbles();
-        myIngredientHandler.ChangeShape(ingredient);
+        //myIngredientHandler.ChangeShape(ingredient);
         return null;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if(other.tag == "SceneConveyor")
         {
             isInTheScene = true;
         }
     }
-    
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "SceneConveyor")
+        {
+            isInTheScene = false;
+        }
+    }
+
 
 }
