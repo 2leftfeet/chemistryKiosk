@@ -942,6 +942,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 181373643136657489, guid: 667ac0ab7c051774984340c631996d50,
+        type: 3}
+      propertyPath: playerPrefab
+      value: 
+      objectReference: {fileID: 7504850698380140998, guid: 19e6fb42f811fbd48aa4f83a50ab122d,
+        type: 3}
     - target: {fileID: 5521095972227362609, guid: 667ac0ab7c051774984340c631996d50,
         type: 3}
       propertyPath: Checkmarks.Array.size
