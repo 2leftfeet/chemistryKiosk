@@ -3,7 +3,12 @@ guid: 2a85f842bebe92c40ab3a399f5c89a8c
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: player_hat_2_material
+    second: {fileID: 2100000, guid: a081dfe4b6ec75644bf3331aa18bb72e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
