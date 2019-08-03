@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class MovementController : MonoBehaviour
 {
-
-
+    public int playerNumber = 1;
     public float movementSpeed = 10f;
     [SerializeField]
     GameObject movingAvatar;
@@ -14,10 +13,18 @@ public class MovementController : MonoBehaviour
     //TODO:
     // get where to look
     // move from there
-
+    private string horizontalName = "Horizontal";
+    private string verticalName = "Vertical";
 
     void Start()
     {
+
+        // THIS IS FOR DEBUGING DONT FORGET TO DELETE
+
+        //horizontalName += playerNumber;
+        //verticalName += playerNumber;
+
+
         // remove this for multiplayer????
         movingAvatar = gameObject;
 
@@ -25,6 +32,14 @@ public class MovementController : MonoBehaviour
             movingAvaterRB = movingAvatar.GetComponent<Rigidbody>();
     }
 
+
+    public void SetPlayerNumber(int number)
+    {
+        playerNumber = number;
+        horizontalName += number.ToString();
+        verticalName += number.ToString();
+        gameObject.GetComponentInChildren<ItemManager>().SetPlayerNumber(number);
+    }
 
     //private shieieeet
     float horizontalAxis;
@@ -36,12 +51,9 @@ public class MovementController : MonoBehaviour
     void Update()
     {
         //dah
-        horizontalAxis = Input.GetAxis("Horizontal");
-        verticalAxis = Input.GetAxis("Vertical");
+        horizontalAxis = Input.GetAxis(horizontalName);
+        verticalAxis = Input.GetAxis(verticalName);
 
-        
-
-  
 
         movementDirectionalSpeed.x = horizontalAxis;
         movementDirectionalSpeed.y = 0;

@@ -6,6 +6,9 @@ public class ItemManager : MonoBehaviour
 {
     IngredientHandler ingredientHandler;
     public Ingredient ingredient;
+
+    private string useName = "Place";
+    
     [SerializeField]
     float radius = 10f;
     // Start is called before the first frame update
@@ -14,10 +17,15 @@ public class ItemManager : MonoBehaviour
         ingredientHandler = gameObject.GetComponent<IngredientHandler>();
     }
 
+    public void SetPlayerNumber(int number)
+    {
+        useName += number.ToString();
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Place"))
+        if (Input.GetButtonDown(useName))
         {
         if (ingredient)
         {     
