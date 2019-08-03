@@ -25,10 +25,11 @@ public class BubbleHandler : MonoBehaviour
     public void UpdateGUI(Ingredient ing)
     {
         if (!ing)
-        {
+        {  
             mainImage.sprite = null;
             secondaryImage.sprite = null;
             secondaryImage.color = Color.white;
+            formula.text = "Empty";
             Debug.Log("Empty");
             return;
         }

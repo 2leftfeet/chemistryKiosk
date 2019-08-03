@@ -4,43 +4,21 @@ using UnityEngine;
 
 public class IngredientsGenerator : MonoBehaviour
 {
-    struct ConveyorIngredients
+    [System.Serializable]
+    class ConveyorIngredients
     {
         public Ingredient ingredient;
         public bool isPresent;
+        public int count;
+
+        
     }
 
-
-    //const int ingredientCount = 5;
-
-    //const int correctIngredientCount = 3;
-
-    //static int correctIngredientsPresent = 0;
-
+    [SerializeField]
     List<Ingredient> needTaskIngredients = new List<Ingredient>();
 
-    //List<Ingredient> currentIngredients = new List<Ingredient>();
-
-    //IngredientHolder allIngredients;
-
-    //List<Ingredient> uncraftableIngredients = new List<Ingredient>();
-
-
+    [SerializeField]
     List<ConveyorIngredients> neededIngredients = new List<ConveyorIngredients>();
-
-
-    private void Start()
-    {
-        /*uncraftableIngredients = new List<Ingredient>();
-
-        foreach(Ingredient ing in allIngredients.ingredients)
-        {
-            if(!ing.craftable)
-            {
-                uncraftableIngredients.Add(ing);
-            }
-        }*/
-    }
 
 
     public void AddIngredients(TaskData task)
@@ -48,52 +26,79 @@ public class IngredientsGenerator : MonoBehaviour
         for(int i = 0; i < task.neededIngredients.Count; i++)
         {
             if(!task.neededIngredients[i].craftable)
+            {
                 needTaskIngredients.Add(task.neededIngredients[i]);
+                UpdateList();
+            }
+                
+        }
+    }
+
+
+    public void RemoveIngredients(TaskData task)
+    {
+        for(int i = 0; i < task.neededIngredients.Count; i++)
+        {
+            for(int a = 0; a < neededIngredients.Count; a++)
+            {
+                if(neededIngredients[a].ingredient == task.neededIngredients[i])
+                {
+                    if(neededIngredients[a].count > 1)
+                    {
+                        neededIngredients[a].count--;
+                    }
+                    else if(neededIngredients[a].count == 1)
+                    {
+                        neededIngredients.Remove(neededIngredients[a]);
+                    }
+
+                }
+            }
+        }
+    }
+
+    private void UpdateList()
+    {
+        if (needTaskIngredients.Count > 0)
+        {
+            for (int i = 0; i < needTaskIngredients.Count; i++)
+            {
+                bool addToConveyor = true;
+                if (neededIngredients.Count > 0)
+                {
+                    for (int a = 0; a < neededIngredients.Count; a++)
+                    {
+                        if (neededIngredients[a].ingredient == needTaskIngredients[i])
+                        {
+                            addToConveyor = false;
+                            neededIngredients[a].count++;
+                            needTaskIngredients.Remove(needTaskIngredients[i]);
+                            break;
+                        }
+
+                    }
+                }
+
+
+                if (addToConveyor && needTaskIngredients.Count > 0)
+                {
+                    ConveyorIngredients addedIngredient = new ConveyorIngredients();
+                    addedIngredient.ingredient = needTaskIngredients[i];
+                    addedIngredient.isPresent = true;
+                    addedIngredient.count = 1;
+                    needTaskIngredients.Remove(needTaskIngredients[i]);
+                    neededIngredients.Add(addedIngredient);
+                }
+            }
         }
     }
 
 
     private void Update()
     {
-        /*if(currentIngredients.Count < ingredientCount)
-        {
-            if(correctIngredientsPresent < correctIngredientCount)
-            {               
-                 foreach(Ingredient ing in needTaskIngredients)
-                 {
-                      if(ing != null)
-                      {
-                          currentIngredients.Add(ing);
-                          needTaskIngredients.Remove(ing);
-                          correctIngredientsPresent++;
-                      }
-                 }
-                    
-                
-            }
-            else
-            {            
-                int randomElement = Random.Range(0, uncraftableIngredients.Count);
-                currentIngredients.Add(uncraftableIngredients[randomElement]);                    
-                
-            }
-        }*/
+        
 
-        for(int i = 0; i < needTaskIngredients.Count; i++)
-        {
-            bool addToConveyor = true;
-            for (int a = 0; a < neededIngredients.Count; a++)
-            {
-                addToConveyor = false;
-                break;
-            }
-            if(addToConveyor)
-            {
-                ConveyorIngredients addedIngredient;
-                addedIngredient.ingredient = needTaskIngredients[i];
-                addedIngredient.isPresent = true;
-            }
-        }
+        
 
     }
 
