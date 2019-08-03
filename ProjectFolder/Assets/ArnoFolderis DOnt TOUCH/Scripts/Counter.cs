@@ -38,7 +38,7 @@ public class Counter : MonoBehaviour, IHoldsIngredient
         }
         //add UI hook
         //UpdateBubbles();
-        //myIngredientHandler.ChangeShape(ingredient);
+        myIngredientHandler.ChangeShape(ingredient);
         return added;
     }
 
