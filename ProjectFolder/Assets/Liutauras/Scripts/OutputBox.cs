@@ -7,9 +7,8 @@ public class OutputBox : MonoBehaviour, IHoldsIngredient
 
     public Task currentTask;
     public Ingredient placedIngredient;
-    // Start is called before the first frame update
-
-    // Update is called once per frame
+    
+    public OrderPopup orderPopup;
 
     public bool AddIngredient(Ingredient toAdd){
         if(!placedIngredient){
@@ -17,8 +16,13 @@ public class OutputBox : MonoBehaviour, IHoldsIngredient
         }else{
             return false;
         }
-        if(placedIngredient == currentTask.taskData.endProduct){
-            currentTask.CompleteTask();
+        if(currentTask){
+            if(placedIngredient == currentTask.taskData.endProduct){
+                currentTask.CompleteTask();
+                currentTask = null;
+                placedIngredient = null;
+                orderPopup.gameObject.SetActive(false);
+            }
         }
         return true;
     }
@@ -27,5 +31,11 @@ public class OutputBox : MonoBehaviour, IHoldsIngredient
         Ingredient toReturn = placedIngredient;
         placedIngredient = null;
         return toReturn;
+    }
+
+    public void AddTask(Task task){
+        currentTask = task;
+        orderPopup.gameObject.SetActive(true);
+        orderPopup.NewTask(task);
     }
 }

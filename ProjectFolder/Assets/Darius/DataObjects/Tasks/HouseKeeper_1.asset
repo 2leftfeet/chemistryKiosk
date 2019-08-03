@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92cb7085705672643a064454d489588e, type: 3}
   m_Name: HouseKeeper_1
   m_EditorClassIdentifier: 
-  endProduct: {fileID: 0}
-  baseTime: 0
+  neededIngredients:
+  - {fileID: 11400000, guid: 84d8808fc3a0ae24cbb7337caa1e5175, type: 2}
+  - {fileID: 11400000, guid: 399da4e0ee095634887c218c3f2aaa4d, type: 2}
+  - {fileID: 11400000, guid: 4c4118ea30417584683366761392601c, type: 2}
+  - {fileID: 11400000, guid: d948fdeb5343d61428baae294862840d, type: 2}
+  - {fileID: 11400000, guid: 36ad94a15e85787469b752af4f46b567, type: 2}
+  - {fileID: 11400000, guid: 04535356dcda9f94ab433adc0bdd04ae, type: 2}
+  endProduct: {fileID: 11400000, guid: bc4220718ddae6d4d8538bed9bbc9058, type: 2}
+  baseTime: 100
   customerPrefab: {fileID: 0}

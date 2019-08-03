@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92cb7085705672643a064454d489588e, type: 3}
   m_Name: Artist_1
   m_EditorClassIdentifier: 
-  endProduct: {fileID: 0}
-  baseTime: 0
+  neededIngredients:
+  - {fileID: 11400000, guid: 36012ba887b2d9a4a9ccce304f4fd154, type: 2}
+  - {fileID: 11400000, guid: 26bfc906b35acf7498df444a1664e824, type: 2}
+  - {fileID: 11400000, guid: 91a33e1ab53879f4fad3af3260798b28, type: 2}
+  - {fileID: 11400000, guid: b0eb4e997e66ba94bbed1648d4bc3445, type: 2}
+  endProduct: {fileID: 11400000, guid: d91d5111b9cad4d4290289fba34288f1, type: 2}
+  baseTime: 100
   customerPrefab: {fileID: 0}
