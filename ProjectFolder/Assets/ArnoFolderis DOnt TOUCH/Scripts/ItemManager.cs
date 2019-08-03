@@ -84,7 +84,7 @@ public class ItemManager : MonoBehaviour
 
         if (closest)
         {
-            return closest.gameObject.GetComponent<Station>().RemoveIngredient();
+            return closest.gameObject.GetComponent<IHoldsIngredient>().RemoveIngredient();
         }
 
 
