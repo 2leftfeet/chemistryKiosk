@@ -13,10 +13,11 @@ public enum StationType
     CoolingBath,
     HeatingLamp,
     PorousBedOfActivatedCarbon,
-    GasInputter
+    GasInputter,
+    ConicalFlask
 }
 
-public class Station : MonoBehaviour
+public class Station : MonoBehaviour, IHoldsIngredient
 {
     public RecipeHolder recipeHolder;
 

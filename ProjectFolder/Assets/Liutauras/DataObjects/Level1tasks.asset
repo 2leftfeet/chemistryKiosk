@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 754899c1448cfda4381e7df063e1585e, type: 3}
   m_Name: Level1tasks
   m_EditorClassIdentifier: 
-  tasks: []
+  tasks:
+  - {fileID: 11400000, guid: 0fd32096dbfe83f4f91065e2deb9174d, type: 2}
+  - {fileID: 11400000, guid: 33f5733dd04f9d64384159fbf9845819, type: 2}
+  - {fileID: 11400000, guid: 3e68500320ca2a14ebc8b2d81af7b30b, type: 2}
+  - {fileID: 11400000, guid: 8a521b649cb5ae44795965e07ac1991c, type: 2}
+  - {fileID: 11400000, guid: c1210c8b3f744404bba90abc8a675f95, type: 2}
+  - {fileID: 11400000, guid: a61c0cbdbae76854f95c564d727d184f, type: 2}
+  - {fileID: 11400000, guid: a4846e0257266e3449cafd86f4fb73da, type: 2}
+  - {fileID: 11400000, guid: 7fbacc006e03c3841acb727ba182d76a, type: 2}

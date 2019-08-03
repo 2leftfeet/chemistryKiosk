@@ -6,15 +6,23 @@ public class Task : MonoBehaviour
 {
     public TaskData taskData;
     private float timeLeft;
-    private Ingredient toMake;
+   
 
 
     void Start(){
         timeLeft = taskData.baseTime;
-        toMake = taskData.endProduct;
+     
     }
     void Update(){
         timeLeft -= Time.deltaTime;
+    }
+
+    public void CompleteTask(){
+
+    }
+
+    void FailTask(){
+
     }
 
 }
