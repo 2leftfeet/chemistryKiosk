@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2763230575157309223}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 750615526562390544}
   - {fileID: 686475028536153554}
@@ -99,6 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredient: {fileID: 0}
   slotCount: 1
+  conveyorCounter: 0
+  isInTheScene: 0
 --- !u!114 &-5233346795125815728
 MonoBehaviour:
   m_ObjectHideFlags: 0
