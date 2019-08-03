@@ -6,7 +6,9 @@ public class TaskCreator : MonoBehaviour
 {
     public TaskHolder availableTasks;
 
-    private List<Task> currentTasks;
+    private int currentTaskCount = 0;
+    public Task[] currentTasks;
+    public OutputBox[] outputBoxes;
 
     public float minWaitTime = 20.0f;
     public float maxWaitTime = 30.0f;
@@ -14,7 +16,8 @@ public class TaskCreator : MonoBehaviour
 
     void Start()
     {
-        currentTasks = new List<Task>();
+        currentTasks = new Task[3];
+        
     }
 
     void Update()
@@ -24,7 +27,9 @@ public class TaskCreator : MonoBehaviour
         }
         if(waiter <= 0.0f){
             waiter = Random.Range(minWaitTime, maxWaitTime);
-            CreateTask();
+            if(currentTaskCount < 3){
+                CreateTask();
+            }
         }
     }
 
@@ -35,6 +40,11 @@ public class TaskCreator : MonoBehaviour
         Task addedTask = newTask.AddComponent<Task>();
         addedTask.taskData = toCreate;
         newTask.transform.parent = this.gameObject.transform;
-        currentTasks.Add(addedTask);
+        for(int i = 0; i < 3; i++){
+            if(currentTasks[i]) continue;
+            else currentTasks[i] = addedTask;
+        }
+
+
     }
 }
