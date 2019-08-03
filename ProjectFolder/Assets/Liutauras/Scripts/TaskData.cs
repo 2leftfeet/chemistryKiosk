@@ -8,7 +8,6 @@ public class TaskData : ScriptableObject
     public List<Ingredient> neededIngredients;
     public Ingredient endProduct;
     public float baseTime;
-    public GameObject customerPrefab;
     public string npcName;
     public Color popupColor;
 
