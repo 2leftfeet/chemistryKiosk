@@ -6,7 +6,7 @@ public class Task : MonoBehaviour
 {
     public TaskData taskData;
     private float timeLeft;
-    private Ingredient toMake;
+   
 
 
     void Start(){
@@ -15,6 +15,14 @@ public class Task : MonoBehaviour
     }
     void Update(){
         timeLeft -= Time.deltaTime;
+    }
+
+    public void CompleteTask(){
+
+    }
+
+    void FailTask(){
+
     }
 
 }

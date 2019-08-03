@@ -16,7 +16,7 @@ public enum StationType
     GasInputter
 }
 
-public class Station : MonoBehaviour
+public class Station : MonoBehaviour, IHoldsIngredient
 {
     public RecipeHolder recipeHolder;
 
