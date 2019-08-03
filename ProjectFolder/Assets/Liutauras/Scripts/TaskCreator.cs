@@ -5,6 +5,7 @@ using UnityEngine;
 public class TaskCreator : MonoBehaviour
 {
     public TaskHolder availableTasks;
+    public IngredientsGenerator ingredientsGenerator;
 
     private int currentTaskCount = 0;
     public Task[] currentTasks;
@@ -54,7 +55,7 @@ public class TaskCreator : MonoBehaviour
                 break;
             }
         }
-
+        ingredientsGenerator.AddIngredients(toCreate);
 
     }
 }

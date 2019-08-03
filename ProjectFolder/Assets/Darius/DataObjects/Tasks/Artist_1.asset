@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92cb7085705672643a064454d489588e, type: 3}
   m_Name: Artist_1
   m_EditorClassIdentifier: 
-  endProduct: {fileID: 0}
+  neededIngredients: []
+  endProduct: {fileID: 11400000, guid: d91d5111b9cad4d4290289fba34288f1, type: 2}
   baseTime: 0
   customerPrefab: {fileID: 0}
