@@ -12,13 +12,23 @@ public class IngredientsGenerator : MonoBehaviour
 
     List<Ingredient> needTaskIngredients = new List<Ingredient>();
 
-    Ingredient[] currentIngredients;
+    List<Ingredient> currentIngredients = new List<Ingredient>();
 
     IngredientHolder allIngredients;
 
+    List<Ingredient> uncraftableIngredients = new List<Ingredient>();
+
     private void Start()
     {
-        currentIngredients = new Ingredient[ingredientCount];
+        uncraftableIngredients = new List<Ingredient>();
+
+        foreach(Ingredient ing in allIngredients.ingredients)
+        {
+            if(!ing.craftable)
+            {
+                uncraftableIngredients.Add(ing);
+            }
+        }
     }
 
 
@@ -34,9 +44,28 @@ public class IngredientsGenerator : MonoBehaviour
 
     private void Update()
     {
-        if(currentIngredients.Length < ingredientCount)
+        if(currentIngredients.Count < ingredientCount)
         {
-            
+            if(correctIngredientsPresent < correctIngredientCount)
+            {               
+                 foreach(Ingredient ing in needTaskIngredients)
+                 {
+                      if(ing != null)
+                      {
+                          currentIngredients.Add(ing);
+                          needTaskIngredients.Remove(ing);
+                          correctIngredientsPresent++;
+                      }
+                 }
+                    
+                
+            }
+            else
+            {            
+                int randomElement = Random.Range(0, uncraftableIngredients.Count);
+                currentIngredients.Add(uncraftableIngredients[randomElement]);                    
+                
+            }
         }
     }
 
