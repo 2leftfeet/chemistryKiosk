@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8646863770519412484}
   - component: {fileID: 4031330300664213840}
   - component: {fileID: 1245969880334180584}
+  - component: {fileID: 3182865526717659526}
   m_Layer: 0
   m_Name: Counter1
   m_TagString: Untagged
@@ -108,3 +109,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.020000009, y: 0.021379288, z: 0.02000001}
   m_Center: {x: -1.075832e-13, y: -0.00068964134, z: 0.010000003}
+--- !u!114 &3182865526717659526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8053283607870122968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82dbd9b6b32a6444e9a751dda137d1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientDatainstance: {fileID: 0}
+  ingredientGO: {fileID: 0}
+  gasGO: {fileID: 0}
+  liquidGO: {fileID: 0}
+  solidGO: {fileID: 0}
+  coloredMat: {fileID: 2100000, guid: e40752ba2e8da8a4e91c3fb9e7419c45, type: 2}
+  transMat: {fileID: 2100000, guid: 6c76c329953bb1f4c9b8f4f618704d53, type: 2}
+  renderer: []

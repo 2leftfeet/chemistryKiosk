@@ -151,7 +151,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activePlayers: 00
+  waitAmount: 0.5
   gameManager: {fileID: 1490728549}
+  sceneName: LiutaurasTestScene
 --- !u!114 &1490728549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c42e480e4e7df040bf9bc771f76021f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCount: 0
+  totalScore: 0
+  activePlayers: 00
   playerPrefab: {fileID: 6193723159144423365, guid: fc79c5b86280dee4c8731fdd67c3a23b,
     type: 3}
   spawn: []
