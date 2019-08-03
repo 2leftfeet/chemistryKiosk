@@ -20,3 +20,5 @@ MonoBehaviour:
   endProduct: {fileID: 11400000, guid: d91d5111b9cad4d4290289fba34288f1, type: 2}
   baseTime: 100
   customerPrefab: {fileID: 0}
+  npcName: Artist
+  popupColor: {r: 0.741, g: 0.059419822, b: 0.5591873, a: 0}

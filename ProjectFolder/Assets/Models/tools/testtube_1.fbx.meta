@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: 1681c56e956d7c24bb108f60e39ca02c
+guid: 80541a57ea790c9499511a9ba9379aff
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: counter_base_material
-    second: {fileID: 2100000, guid: 04479b9bf8503604eba71adf42a43d52, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: counter_top_material
-    second: {fileID: 2100000, guid: a65b7434a64c27c4888a9c7711515c98, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
