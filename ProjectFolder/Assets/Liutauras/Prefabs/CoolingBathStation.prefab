@@ -507,6 +507,38 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!65 &1187731026398336478
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2292039315556257521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &4729800215361212618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2292039315556257521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d41e0be826b72841bb7280838d10105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recipeHolder: {fileID: 11400000, guid: 06a305619b63e394bbe472263f2ebeca, type: 2}
+  stationType: 6
+  slotCount: 2
+  ingredientSlots: []
+  ingredientGUI: {fileID: 6182853781284139967}
+  BubHan1: {fileID: 6182853781284139965}
+  BubHan2: {fileID: 6182853781284139966}
 --- !u!1 &3622529139055946940
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,38 +1026,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ba04b5401807b42b85600f05b5150c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &1187731026398336478
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2292039315556257521}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &4729800215361212618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2292039315556257521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d41e0be826b72841bb7280838d10105, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  recipeHolder: {fileID: 0}
-  stationType: 6
-  slotCount: 2
-  ingredientSlots: []
-  ingredientGUI: {fileID: 6182853781284139967}
-  BubHan1: {fileID: 6182853781284139965}
-  BubHan2: {fileID: 6182853781284139966}
 --- !u!1001 &2544296883492105807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1417,6 +1417,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cooler
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f126749f9e5cc6f4ab444d28b2a17f35,
+        type: 3}
+      propertyPath: m_TagString
+      value: Station
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f126749f9e5cc6f4ab444d28b2a17f35,
         type: 3}
