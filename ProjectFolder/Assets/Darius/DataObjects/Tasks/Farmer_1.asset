@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neededIngredients: []
   endProduct: {fileID: 11400000, guid: b8a01ffdb52a292499f26130795ef28b, type: 2}
-  baseTime: 0
+  baseTime: 100
   customerPrefab: {fileID: 0}

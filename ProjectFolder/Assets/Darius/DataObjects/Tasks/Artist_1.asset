@@ -18,5 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 91a33e1ab53879f4fad3af3260798b28, type: 2}
   - {fileID: 11400000, guid: b0eb4e997e66ba94bbed1648d4bc3445, type: 2}
   endProduct: {fileID: 11400000, guid: d91d5111b9cad4d4290289fba34288f1, type: 2}
-  baseTime: 0
+  baseTime: 100
   customerPrefab: {fileID: 0}

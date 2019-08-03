@@ -5,7 +5,8 @@ using UnityEngine;
 public class Task : MonoBehaviour
 {
     public TaskData taskData;
-    private float timeLeft;
+    public float timeLeft;
+    private bool completed = false;
    
 
 
@@ -19,7 +20,10 @@ public class Task : MonoBehaviour
 
     public void CompleteTask(){
         Debug.Log("task completed");
+        completed = true;
     }
+
+    public bool isCompleted(){return completed;}
 
     void FailTask(){
 

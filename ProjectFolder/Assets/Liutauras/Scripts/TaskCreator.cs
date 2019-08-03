@@ -32,6 +32,8 @@ public class TaskCreator : MonoBehaviour
                 CreateTask();
             }
         }
+
+        CheckTasks();
     }
 
     void CreateTask(){
@@ -42,6 +44,7 @@ public class TaskCreator : MonoBehaviour
         TaskData toCreate = availableTasks.tasks[taskIdx];
         //Create a Gameobject for the task, add the task component and give it the task data
         GameObject newTask = new GameObject();
+        newTask.name = toCreate.name;
         Task addedTask = newTask.AddComponent<Task>();
         addedTask.taskData = toCreate;
         //parent the component under task creator
@@ -51,11 +54,27 @@ public class TaskCreator : MonoBehaviour
             if(currentTasks[i]) continue;
             else {
                 currentTasks[i] = addedTask;
-                outputBoxes[i].currentTask = addedTask;
+                outputBoxes[i].AddTask(addedTask);
                 break;
             }
         }
-        ingredientsGenerator.AddIngredients(toCreate);
+        if(ingredientsGenerator) ingredientsGenerator.AddIngredients(toCreate);
 
+    }
+
+    void CheckTasks(){
+        for(int i = 0; i < 3; i++){
+            if(currentTasks[i]){
+                if(currentTasks[i].isCompleted()){
+                    EndTask(i);
+                }
+            }
+        }
+    }
+
+    void EndTask(int i){
+        currentTaskCount--;
+        Destroy(currentTasks[i].gameObject);
+        currentTasks[i] = null;
     }
 }
