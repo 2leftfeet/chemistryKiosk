@@ -5,6 +5,7 @@ using UnityEngine;
 public class TaskCreator : MonoBehaviour
 {
     public TaskHolder availableTasks;
+    public IngredientsGenerator ingredientsGenerator;
 
     private List<Task> currentTasks;
 
@@ -36,5 +37,6 @@ public class TaskCreator : MonoBehaviour
         addedTask.taskData = toCreate;
         newTask.transform.parent = this.gameObject.transform;
         currentTasks.Add(addedTask);
+        ingredientsGenerator.AddIngredients(toCreate);
     }
 }
