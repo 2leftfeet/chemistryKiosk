@@ -507,6 +507,8 @@ MonoBehaviour:
   ingredientSlots:
   - {fileID: 0}
   - {fileID: 0}
+  ingredientGUI: {fileID: 0}
+  Slider: {fileID: 0}
   BubHan1: {fileID: 8176981334385839313}
   BubHan2: {fileID: 8176981334385839314}
 --- !u!1 &4184585585344252579

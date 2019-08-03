@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Station
   - OutputBox
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX
