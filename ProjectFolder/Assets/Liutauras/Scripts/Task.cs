@@ -18,7 +18,7 @@ public class Task : MonoBehaviour
     }
 
     public void CompleteTask(){
-
+        Debug.Log("task completed");
     }
 
     void FailTask(){
