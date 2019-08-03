@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sodium_Hypochlorite
   m_EditorClassIdentifier: 
   id: NaClO
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.9394542, g: 1, b: 0.5990566, a: 1}
   concentration: 2
   state: 1
   craftable: 1

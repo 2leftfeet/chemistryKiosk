@@ -18,4 +18,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7e7c769451f97f647980bdef1f2ca5ee, type: 2}
   outputIngredients:
   - {fileID: 11400000, guid: 28bc4d7969f0c7c41879426d331ecd7b, type: 2}
-  stationToUse: 5
+  stationToUse: 10

@@ -13,7 +13,8 @@ public enum StationType
     CoolingBath,
     HeatingLamp,
     PorousBedOfActivatedCarbon,
-    GasInputter
+    GasInputter,
+    ConicalFlask
 }
 
 public class Station : MonoBehaviour
