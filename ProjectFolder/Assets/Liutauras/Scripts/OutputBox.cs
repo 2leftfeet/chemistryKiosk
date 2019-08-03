@@ -28,4 +28,8 @@ public class OutputBox : MonoBehaviour, IHoldsIngredient
         placedIngredient = null;
         return toReturn;
     }
+
+    public void AddTask(Task task){
+        currentTask = task; 
+    }
 }

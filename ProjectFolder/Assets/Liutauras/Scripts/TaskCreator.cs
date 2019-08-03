@@ -35,15 +35,25 @@ public class TaskCreator : MonoBehaviour
     }
 
     void CreateTask(){
+        //Increase current task count
+        currentTaskCount++;
+        //Choose a random task from task list
         int taskIdx = Random.Range(0, availableTasks.tasks.Count);
         TaskData toCreate = availableTasks.tasks[taskIdx];
+        //Create a Gameobject for the task, add the task component and give it the task data
         GameObject newTask = new GameObject();
         Task addedTask = newTask.AddComponent<Task>();
         addedTask.taskData = toCreate;
+        //parent the component under task creator
         newTask.transform.parent = this.gameObject.transform;
+        //keep track of the task
         for(int i = 0; i < 3; i++){
             if(currentTasks[i]) continue;
-            else currentTasks[i] = addedTask;
+            else {
+                currentTasks[i] = addedTask;
+                outputBoxes[i].currentTask = addedTask;
+                break;
+            }
         }
         ingredientsGenerator.AddIngredients(toCreate);
 
