@@ -21,7 +21,22 @@ ModelImporter:
   - first:
       74: -3797763947615873668
     second: player_body|player_walk
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: player_material_body
+    second: {fileID: 2100000, guid: dc60286eedf93e046af5abfd8dc0976c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: player_material_face
+    second: {fileID: 2100000, guid: 850a805b4009d7343b0b4ad21edab51f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: player_material_hands
+    second: {fileID: 2100000, guid: dc60286eedf93e046af5abfd8dc0976c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

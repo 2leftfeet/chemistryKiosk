@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ArnoFolderis DOnt TOUCH/movementScene.unity
     guid: 854fa3fd569537a418f709770016a714
+  - enabled: 1
+    path: Assets/Liutauras/Scenes/LiutaurasTestScene.unity
+    guid: d6861801b9f907c4bb5d2f80b80ab85c
   m_configObjects: {}

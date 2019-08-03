@@ -29,7 +29,7 @@ public class Station : MonoBehaviour, IHoldsIngredient
 
     //ROKO KODAS ATSARGIAI
     public GameObject ingredientGUI;
-    public GameObject Slider;
+    //public GameObject Slider;
 
     public BubbleHandler BubHan1;
     public BubbleHandler BubHan2;
