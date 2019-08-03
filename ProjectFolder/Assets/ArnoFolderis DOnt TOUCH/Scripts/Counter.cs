@@ -9,20 +9,30 @@ public class Counter : MonoBehaviour, IHoldsIngredient
     private IngredientHandler myIngredientHandler;
     [SerializeField] private int slotCount = 1;
 
+    [SerializeField] bool conveyorCounter = false;
+    [SerializeField] bool isInTheScene = false;
+
     void Start()
     {
         myIngredientHandler = gameObject.GetComponent<IngredientHandler>();
     }
 
+    public bool IsInScene()
+    {
+        return isInTheScene;
+    }
+
     public bool AddIngredient(Ingredient _ingredient)
     {
         bool added = false;
+        
         for (int i = 0; i < slotCount; i++)
         {
             if (ingredient == null)
             {
                 ingredient = _ingredient;
                 added = true;
+                isInTheScene = false;
                 break;
             }
         }
@@ -51,4 +61,14 @@ public class Counter : MonoBehaviour, IHoldsIngredient
         myIngredientHandler.ChangeShape(ingredient);
         return null;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "SceneConveyor")
+        {
+            isInTheScene = true;
+        }
+    }
+    
+
 }

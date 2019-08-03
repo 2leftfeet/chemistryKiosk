@@ -10,7 +10,7 @@ public class IngredientsGenerator : MonoBehaviour
         public Ingredient ingredient;
         public bool isPresent;
         public int count;
-
+        public Counter dedicatedCounter;
         
     }
 
@@ -19,6 +19,9 @@ public class IngredientsGenerator : MonoBehaviour
 
     [SerializeField]
     List<ConveyorIngredients> neededIngredients = new List<ConveyorIngredients>();
+
+    [SerializeField]
+    List<Counter> conveyorCounters = new List<Counter>();
 
 
     public void AddIngredients(TaskData task)
@@ -49,7 +52,9 @@ public class IngredientsGenerator : MonoBehaviour
                     }
                     else if(neededIngredients[a].count == 1)
                     {
+                        neededIngredients[a].dedicatedCounter.RemoveIngredient();
                         neededIngredients.Remove(neededIngredients[a]);
+
                     }
 
                 }
@@ -86,6 +91,15 @@ public class IngredientsGenerator : MonoBehaviour
                     addedIngredient.ingredient = needTaskIngredients[i];
                     addedIngredient.isPresent = true;
                     addedIngredient.count = 1;
+                    for (int b = 0; b < conveyorCounters.Count; b++)
+                    {
+                        if(conveyorCounters[b].ingredient == null &&  !conveyorCounters[b].IsInScene())
+                        {
+                            addedIngredient.dedicatedCounter = conveyorCounters[b];
+                            conveyorCounters[b].AddIngredient(addedIngredient.ingredient);
+                            break;
+                        }
+                    }
                     needTaskIngredients.Remove(needTaskIngredients[i]);
                     neededIngredients.Add(addedIngredient);
                 }
@@ -93,11 +107,41 @@ public class IngredientsGenerator : MonoBehaviour
         }
     }
 
+  /*  private void UpdateCountersAdd(Ingredient ing)
+    {
+        for(int i = 0; i < conveyorCounters.Count; i++)
+        {
+            if(conveyorCounters[i].ingredient == null)
+            {
+                conveyorCounters[i].AddIngredient(ing);
+            }
+        }
+    }*/
+
+    void CheckForCoveyorUpdates()
+    {
+        for(int i = 0; i < neededIngredients.Count; i++)
+        {
+
+            if(neededIngredients[i].dedicatedCounter != null)
+            {
+                if (!neededIngredients[i].dedicatedCounter.IsInScene() && neededIngredients[i].dedicatedCounter.ingredient == null)
+                {
+                    neededIngredients[i].dedicatedCounter.AddIngredient(neededIngredients[i].ingredient);
+                }
+            }
+
+
+            
+        }
+    }
+
+
 
     private void Update()
     {
-        
 
+        CheckForCoveyorUpdates();
         
 
     }
