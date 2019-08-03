@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3c4b62b5a1a6e4d82b9ec95a3a07ed, type: 3}
+  m_Name: Fertilizer(Urea)_Step3
+  m_EditorClassIdentifier: 
+  formula: COCl_2- + NH_3- -> (NH_2-)_2-CO
+  inputIngredients:
+  - {fileID: 11400000, guid: 827c85eea54de024ab4f5348b2b0cad2, type: 2}
+  - {fileID: 11400000, guid: 7e7c769451f97f647980bdef1f2ca5ee, type: 2}
+  outputIngredients:
+  - {fileID: 11400000, guid: 51a6f03cafd61314181e53f81633c26c, type: 2}
+  stationToUse: 10

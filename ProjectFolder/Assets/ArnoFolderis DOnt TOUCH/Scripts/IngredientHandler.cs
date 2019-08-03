@@ -25,37 +25,27 @@ public class IngredientHandler : MonoBehaviour
     bool hasItem = false;
 
     MeshFilter meshFilter;
-    MeshRenderer meshRenderer;
+
+    [SerializeField]
+    MeshRenderer[] renderer;
+
+    private MaterialPropertyBlock _propBlock;
+    void Awake()
+    {
+        _propBlock = new MaterialPropertyBlock();
+    }
 
     void Start()
     {
+        
         meshFilter = ingredientGO.GetComponent<MeshFilter>();
 
-        meshRenderer = ingredientGO.GetComponent<MeshRenderer>();
 
         ChangeShape(ingredientDatainstance);
     }
 
-    bool DEBUG = false;
-    int DEBUG_CYCLING = 0;
-
-    void Update()
-    {
-
-
-        if (DEBUG)
-        {
-            if (DEBUG_CYCLING > 200)
-            {
-                ChangeShape(ingredientDatainstance);
-                DEBUG_CYCLING = 0;
-            }
-            DEBUG_CYCLING++;
-        }
-
-    }
-
     State state;
+
     // will change to ChangeShpare(Ingredient ingredientData)
     public void ChangeShape(Ingredient ingredientData)
     {
@@ -71,19 +61,27 @@ public class IngredientHandler : MonoBehaviour
             solidGO.SetActive(false);
         if (hasItem)
         {
-
-            coloredMat.color = ingredientData.color;
+            
             // create object
             switch (ingredientData.state)
             {
                 case State.Solid:
                     solidGO.SetActive(true);
+                    renderer[0].GetPropertyBlock(_propBlock);
+                    _propBlock.SetColor("_Color", ingredientData.color);
+                    renderer[0].SetPropertyBlock(_propBlock);
                     break;
                 case State.Liquid:
                     liquidGO.SetActive(true);
+                    renderer[1].GetPropertyBlock(_propBlock);
+                    _propBlock.SetColor("_Color", ingredientData.color);
+                    renderer[1].SetPropertyBlock(_propBlock);
                     break;
                 case State.Gas:
                     gasGO.SetActive(true);
+                    renderer[2].GetPropertyBlock(_propBlock);
+                    _propBlock.SetColor("_Color", ingredientData.color);
+                    renderer[2].SetPropertyBlock(_propBlock);
                     break;
                 default:
                     break;

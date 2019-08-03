@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92cb7085705672643a064454d489588e, type: 3}
   m_Name: Dentist_1
   m_EditorClassIdentifier: 
-  endProduct: {fileID: 0}
-  baseTime: 0
+  neededIngredients:
+  - {fileID: 11400000, guid: 84d8808fc3a0ae24cbb7337caa1e5175, type: 2}
+  - {fileID: 11400000, guid: 098e41d1fe831894f9fc7c8b24487a22, type: 2}
+  - {fileID: 11400000, guid: 722d80de99171c5499d805313955beac, type: 2}
+  - {fileID: 11400000, guid: 7e7c769451f97f647980bdef1f2ca5ee, type: 2}
+  - {fileID: 11400000, guid: 00bf99a8e17ae754195bfd2a6acf7aac, type: 2}
+  - {fileID: 11400000, guid: 28bc4d7969f0c7c41879426d331ecd7b, type: 2}
+  - {fileID: 11400000, guid: c4c9fc321005538458a17a984ba9e75f, type: 2}
+  - {fileID: 11400000, guid: 703e38d49bf89f845a0871d13dfab13b, type: 2}
+  endProduct: {fileID: 11400000, guid: 7bfa5e9ef60444b41a3daf3f559c1f72, type: 2}
+  baseTime: 100
   customerPrefab: {fileID: 0}

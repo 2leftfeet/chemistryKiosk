@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 754899c1448cfda4381e7df063e1585e, type: 3}
   m_Name: AllTasks
   m_EditorClassIdentifier: 
-  tasks: []
+  tasks:
+  - {fileID: 11400000, guid: 464d29e476b195444a6394a56e41981a, type: 2}
