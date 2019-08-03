@@ -27,6 +27,9 @@ public class Station : MonoBehaviour, IHoldsIngredient
     public Ingredient[] ingredientSlots;
 
     //ROKO KODAS ATSARGIAI
+    public GameObject ingredientGUI;
+    public GameObject Slider;
+
     public BubbleHandler BubHan1;
     public BubbleHandler BubHan2;
     //ROKO KODAS BAIGIASI PHEW
@@ -94,7 +97,12 @@ public class Station : MonoBehaviour, IHoldsIngredient
             } else {
                 recipeCorrect = false;
             }
-            if (recipeCorrect) ConvertIngredients(r);
+            // Recipe is correct, starting crafting
+            if (recipeCorrect)
+            {
+                
+                ConvertIngredients(r);
+            }
         }
     }
 

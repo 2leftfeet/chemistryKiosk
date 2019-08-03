@@ -39,10 +39,10 @@ public class StartMenu : MonoBehaviour
 
     void UpdateText()
     {
-        playerText.text = playerCount + " Player";
+        playerText.text = playerCount + " PLAYER";
         if (playerCount > 1)
         {
-            playerText.text += "s";
+            playerText.text += "S";
         }
     }
 
