@@ -4,23 +4,34 @@ using UnityEngine;
 
 public class IngredientsGenerator : MonoBehaviour
 {
-    const int ingredientCount = 5;
+    struct ConveyorIngredients
+    {
+        public Ingredient ingredient;
+        public bool isPresent;
+    }
 
-    const int correctIngredientCount = 3;
 
-    static int correctIngredientsPresent = 0;
+    //const int ingredientCount = 5;
+
+    //const int correctIngredientCount = 3;
+
+    //static int correctIngredientsPresent = 0;
 
     List<Ingredient> needTaskIngredients = new List<Ingredient>();
 
-    List<Ingredient> currentIngredients = new List<Ingredient>();
+    //List<Ingredient> currentIngredients = new List<Ingredient>();
 
-    IngredientHolder allIngredients;
+    //IngredientHolder allIngredients;
 
-    List<Ingredient> uncraftableIngredients = new List<Ingredient>();
+    //List<Ingredient> uncraftableIngredients = new List<Ingredient>();
+
+
+    List<ConveyorIngredients> neededIngredients = new List<ConveyorIngredients>();
+
 
     private void Start()
     {
-        uncraftableIngredients = new List<Ingredient>();
+        /*uncraftableIngredients = new List<Ingredient>();
 
         foreach(Ingredient ing in allIngredients.ingredients)
         {
@@ -28,7 +39,7 @@ public class IngredientsGenerator : MonoBehaviour
             {
                 uncraftableIngredients.Add(ing);
             }
-        }
+        }*/
     }
 
 
@@ -44,7 +55,7 @@ public class IngredientsGenerator : MonoBehaviour
 
     private void Update()
     {
-        if(currentIngredients.Count < ingredientCount)
+        /*if(currentIngredients.Count < ingredientCount)
         {
             if(correctIngredientsPresent < correctIngredientCount)
             {               
@@ -66,7 +77,24 @@ public class IngredientsGenerator : MonoBehaviour
                 currentIngredients.Add(uncraftableIngredients[randomElement]);                    
                 
             }
+        }*/
+
+        for(int i = 0; i < needTaskIngredients.Count; i++)
+        {
+            bool addToConveyor = true;
+            for (int a = 0; a < neededIngredients.Count; a++)
+            {
+                addToConveyor = false;
+                break;
+            }
+            if(addToConveyor)
+            {
+                ConveyorIngredients addedIngredient;
+                addedIngredient.ingredient = needTaskIngredients[i];
+                addedIngredient.isPresent = true;
+            }
         }
+
     }
 
 

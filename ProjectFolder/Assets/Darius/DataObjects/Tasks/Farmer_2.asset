@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92cb7085705672643a064454d489588e, type: 3}
   m_Name: Farmer_2
   m_EditorClassIdentifier: 
-  neededIngredients: []
+  neededIngredients:
+  - {fileID: 11400000, guid: d60152cfd3caab14bb76800ff01d76f8, type: 2}
+  - {fileID: 11400000, guid: 04535356dcda9f94ab433adc0bdd04ae, type: 2}
+  - {fileID: 11400000, guid: 827c85eea54de024ab4f5348b2b0cad2, type: 2}
+  - {fileID: 11400000, guid: 7e7c769451f97f647980bdef1f2ca5ee, type: 2}
+  - {fileID: 11400000, guid: 4c4118ea30417584683366761392601c, type: 2}
+  - {fileID: 11400000, guid: 399da4e0ee095634887c218c3f2aaa4d, type: 2}
   endProduct: {fileID: 11400000, guid: 51a6f03cafd61314181e53f81633c26c, type: 2}
   baseTime: 0
   customerPrefab: {fileID: 0}
