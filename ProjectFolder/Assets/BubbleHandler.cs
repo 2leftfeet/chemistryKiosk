@@ -26,7 +26,9 @@ public class BubbleHandler : MonoBehaviour
     {
         if (!ing)
         {
-            //add default stuff
+            mainImage.sprite = null;
+            secondaryImage.sprite = null;
+            secondaryImage.color = Color.white;
             Debug.Log("Empty");
             return;
         }
