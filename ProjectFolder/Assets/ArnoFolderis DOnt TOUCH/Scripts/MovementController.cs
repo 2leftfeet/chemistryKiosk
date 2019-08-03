@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovementController : MonoBehaviour
 {
-    public int playerNumber = 1;
+    public int playerNumber = 0;
     public float movementSpeed = 10f;
     [SerializeField]
     GameObject movingAvatar;

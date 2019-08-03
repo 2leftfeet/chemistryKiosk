@@ -5,7 +5,10 @@ using UnityEngine;
 public class Game : MonoBehaviour
 {
     [SerializeField]
-    int playerCount;
+    bool[] activePlayers = { false };
+
+    
+    private int playerCount = 4;
 
     [SerializeField]
     GameObject playerPrefab;
@@ -14,11 +17,31 @@ public class Game : MonoBehaviour
     Transform[] spawn;
 
     void Start(){
-        for (int i = 1; i <= playerCount; i++)
+
+        DontDestroyOnLoad(this.gameObject);
+        // for debuging
+        //activePlayers = new bool[4];
+        //activePlayers[0] = true;
+       // activePlayers[1] = true;
+        //activePlayers[2] = true;
+        //activePlayers[3] = true;
+        //StartGame(activePlayers);
+    }
+
+
+    public void StartGame(bool[] players)
+    {
+        GameObject[] spawngos = GameObject.FindGameObjectsWithTag("SpawnPoint");
+        // had coding playercount
+        for (int i = 0; i < playerCount; i++)
         {
-            GameObject go = Instantiate(playerPrefab);
-            go.GetComponent<MovementController>().SetPlayerNumber(i);
-            go.transform.position = spawn[i-1].position;
+            if (players[i])
+            {
+                GameObject go = Instantiate(playerPrefab);
+                go.GetComponent<MovementController>().SetPlayerNumber(i);
+                if(spawngos[i])
+                    go.transform.position = spawngos[i].transform.position;
+            }
         }
     }
 
