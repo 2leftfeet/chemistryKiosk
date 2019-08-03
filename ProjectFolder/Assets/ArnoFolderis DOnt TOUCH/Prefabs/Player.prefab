@@ -51,6 +51,10 @@ MonoBehaviour:
   solidGO: {fileID: 6193723158966289238}
   coloredMat: {fileID: 2100000, guid: ebc2fbd719326eb40b491c9d4201f3ad, type: 2}
   transMat: {fileID: 2100000, guid: 6c76c329953bb1f4c9b8f4f618704d53, type: 2}
+  renderer:
+  - {fileID: 6193723158966289236}
+  - {fileID: 4533362853182222134}
+  - {fileID: 4956473015600463012}
 --- !u!114 &800714602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,8 +99,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6193723158966289234}
-  - {fileID: 7475150348290501527}
   - {fileID: 1192946662929361401}
+  - {fileID: 7475150348290501527}
   - {fileID: 800714601}
   m_Father: {fileID: 6193723159144423375}
   m_RootOrder: 1
@@ -475,6 +479,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 576745714210313483}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &6193723158966289236 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6770464186661590623, guid: 5a5663538fd3f854186dd1a240ed9c90,
+    type: 3}
+  m_PrefabInstance: {fileID: 576745714210313483}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1461278248521678123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -530,7 +540,7 @@ PrefabInstance:
     - target: {fileID: 345003076929180882, guid: 91ce06756ee7f9a47b7bf16f46549174,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 345003076929180882, guid: 91ce06756ee7f9a47b7bf16f46549174,
         type: 3}
@@ -573,6 +583,12 @@ GameObject:
 --- !u!4 &1192946662929361401 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 345003076929180882, guid: 91ce06756ee7f9a47b7bf16f46549174,
+    type: 3}
+  m_PrefabInstance: {fileID: 1461278248521678123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &4533362853182222134 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3075463405235278365, guid: 91ce06756ee7f9a47b7bf16f46549174,
     type: 3}
   m_PrefabInstance: {fileID: 1461278248521678123}
   m_PrefabAsset: {fileID: 0}
@@ -631,7 +647,7 @@ PrefabInstance:
     - target: {fileID: 3056684080849360948, guid: ad9787d148edccc468d7010452da2184,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3056684080849360948, guid: ad9787d148edccc468d7010452da2184,
         type: 3}
@@ -679,6 +695,12 @@ GameObject:
 --- !u!4 &7475150348290501527 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3056684080849360948, guid: ad9787d148edccc468d7010452da2184,
+    type: 3}
+  m_PrefabInstance: {fileID: 5608833504463827875}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &4956473015600463012 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 657096360323747591, guid: ad9787d148edccc468d7010452da2184,
     type: 3}
   m_PrefabInstance: {fileID: 5608833504463827875}
   m_PrefabAsset: {fileID: 0}
