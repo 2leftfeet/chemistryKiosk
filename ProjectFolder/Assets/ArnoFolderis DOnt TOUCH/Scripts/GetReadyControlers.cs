@@ -10,6 +10,8 @@ public class GetReadyControlers : MonoBehaviour
     private bool coundownStated = false;
     private bool beDormant = false;
     [SerializeField]
+    private float waitAmount = 0.5f;
+    [SerializeField]
     Game gameManager;
     GetReadyControlers getReadyControlers;
     [SerializeField]
@@ -42,7 +44,7 @@ public class GetReadyControlers : MonoBehaviour
     IEnumerator CountDown()
     {
         coundownStated = true;
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(waitAmount);
         beDormant = true;
         // change scene
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
