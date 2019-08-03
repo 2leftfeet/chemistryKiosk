@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   formula: NaOH(diluted)
   inputIngredients:
-  - {fileID: 11400000, guid: 4c4118ea30417584683366761392601c, type: 2}
+  - {fileID: 11400000, guid: d948fdeb5343d61428baae294862840d, type: 2}
   - {fileID: 11400000, guid: 399da4e0ee095634887c218c3f2aaa4d, type: 2}
   outputIngredients:
   - {fileID: 11400000, guid: 36ad94a15e85787469b752af4f46b567, type: 2}

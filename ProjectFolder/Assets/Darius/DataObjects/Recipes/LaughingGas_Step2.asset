@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3c4b62b5a1a6e4d82b9ec95a3a07ed, type: 3}
   m_Name: LaughingGas_Step2
   m_EditorClassIdentifier: 
-  formula: H_2-SO_4- + 2NH3 -> (NH_4-)_2-SO_4-
+  formula: H_2-SO_4- + 2NH_3- -> (NH_4-)_2-SO_4-
   inputIngredients:
   - {fileID: 11400000, guid: 722d80de99171c5499d805313955beac, type: 2}
   - {fileID: 11400000, guid: 7e7c769451f97f647980bdef1f2ca5ee, type: 2}

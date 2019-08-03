@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f81bda6417e67c14fb59bb93a8a0401c, type: 3}
   m_Name: Iron3_Ferrocyanide_Dried
   m_EditorClassIdentifier: 
-  id: Fe_4-[Fe(CN)_6-]_3-(powder)
+  id: Fe_4-[Fe(CN)_6-]_3-
   color: {r: 0.11816931, g: 0, b: 1, a: 1}
-  concentration: 0
+  concentration: 3
   state: 0
   craftable: 1
