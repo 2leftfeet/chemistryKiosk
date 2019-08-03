@@ -7,6 +7,7 @@ public class GetReadyControlers : MonoBehaviour
 {
     [SerializeField]
     private bool[] activePlayers = { false };
+
     private bool coundownStated = false;
     private bool beDormant = false;
     [SerializeField]
