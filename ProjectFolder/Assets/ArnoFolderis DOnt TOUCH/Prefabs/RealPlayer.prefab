@@ -79,7 +79,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3346423235007244115, guid: 6e40c0af603cfd343a222f328f12781c, type: 3}
+  - {fileID: 2100000, guid: 09db59acdd0568f44aa3d2055284b175, type: 2}
   - {fileID: 2457265362985718998, guid: 6e40c0af603cfd343a222f328f12781c, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -947,7 +947,7 @@ Transform:
   m_GameObject: {fileID: 7504850698380140998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 799889186351533520}
   - {fileID: 5844522354150449704}
@@ -1003,7 +1003,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.8
   m_Center: {x: 0, y: 1.08, z: 0}
 --- !u!114 &1947658287986325706
 MonoBehaviour:
@@ -1018,7 +1018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerNumber: 0
-  movementSpeed: 10
+  movementSpeed: 15
   movingAvatar: {fileID: 0}
   movementDirection: {x: 0, y: 0, z: 0}
   movementDirectionalSpeed: {x: 0, y: 0, z: 0}
