@@ -6,8 +6,6 @@ public class IngredientHandler : MonoBehaviour
 {
     [SerializeField]
     Ingredient ingredientDatainstance;
-    [SerializeField]
-    GameObject ingredientGO;
 
     [SerializeField]
     GameObject gasGO;
@@ -24,8 +22,6 @@ public class IngredientHandler : MonoBehaviour
 
     bool hasItem = false;
 
-    MeshFilter meshFilter;
-
     [SerializeField]
     MeshRenderer[] renderer;
 
@@ -37,8 +33,7 @@ public class IngredientHandler : MonoBehaviour
 
     void Start()
     {
-        
-        meshFilter = ingredientGO.GetComponent<MeshFilter>();
+
 
 
         ChangeShape(ingredientDatainstance);
