@@ -52,9 +52,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Roboto-Light SDF
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: 2119065385
   material: {fileID: 8668618034202530493}
-  materialHashCode: 0
+  materialHashCode: -2023819390
   m_Version: 1.1.0
   m_SourceFontFileGUID: 5469f5cb4566ffb438b0b63fc55332cf
   m_SourceFontFile_EditorRef: {fileID: 0}
