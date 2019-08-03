@@ -1229,6 +1229,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Counter
       objectReference: {fileID: 0}
+    - target: {fileID: 7007681558664455599, guid: 12f0db4251c3f0f46b38b7c890e7bac5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7007681558664455594, guid: 12f0db4251c3f0f46b38b7c890e7bac5,
         type: 3}
       propertyPath: m_LocalPosition.x
