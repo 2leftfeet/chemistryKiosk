@@ -14,7 +14,8 @@ public enum StationType
     HeatingLamp,
     PorousBedOfActivatedCarbon,
     GasInputter,
-    ConicalFlask
+    ConicalFlask,
+    Counter
 }
 
 public class Station : MonoBehaviour, IHoldsIngredient
@@ -112,7 +113,9 @@ public class Station : MonoBehaviour, IHoldsIngredient
 
     private void UpdateBubbles()
     {
-        BubHan1.UpdateGUI(ingredientSlots[0]);
-        BubHan2.UpdateGUI(ingredientSlots[1]);
+        if (BubHan1)
+            BubHan1.UpdateGUI(ingredientSlots[0]);
+        if (BubHan2)
+            BubHan2.UpdateGUI(ingredientSlots[1]);
     }
 }
