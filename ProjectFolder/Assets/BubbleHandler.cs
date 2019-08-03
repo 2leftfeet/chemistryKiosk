@@ -16,15 +16,20 @@ public class BubbleHandler : MonoBehaviour
     public Sprite gas;
     public Sprite gasSec;
 
-    public Ingredient ing;
+    //public Ingredient ing;
 
     private State state;
     private Color ingColor;
 
     public TMP_Text formula;
-
-    private void Start()
+    public void UpdateGUI(Ingredient ing)
     {
+        if (!ing)
+        {
+            //add default stuff
+            Debug.Log("Empty");
+            return;
+        }
         formula.text = FormulaHandler.Convert(ing.id);
         state = ing.state;
         ingColor = ing.color;

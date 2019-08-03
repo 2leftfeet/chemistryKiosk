@@ -24,7 +24,12 @@ public class Station : MonoBehaviour
     [SerializeField] private int slotCount = 2;
 
     public Ingredient[] ingredientSlots;
-    
+
+    //ROKO KODAS ATSARGIAI
+    public BubbleHandler BubHan1;
+    public BubbleHandler BubHan2;
+    //ROKO KODAS BAIGIASI PHEW
+
 
     void Start(){
         ingredientSlots = new Ingredient[slotCount];
@@ -46,6 +51,8 @@ public class Station : MonoBehaviour
             }
         }
         RecipeCheck();
+        BubHan1.UpdateGUI(ingredientSlots[0]); //ROKO KODAS
+        BubHan2.UpdateGUI(ingredientSlots[1]); //ROKO KODAS
         return added;
     }
 
@@ -58,11 +65,13 @@ public class Station : MonoBehaviour
             }
         }
         RecipeCheck();
+        BubHan1.UpdateGUI(ingredientSlots[0]);
+        BubHan2.UpdateGUI(ingredientSlots[1]);//ROKO KODAS
         return null;
     }
 
     [ContextMenu("Check for Recipe")]
-    void RecipeCheck(){
+    void RecipeCheck() { 
         foreach(Recipe r in recipeHolder.allRecipes){
             bool recipeCorrect = true;
             if(r.stationToUse == stationType){
