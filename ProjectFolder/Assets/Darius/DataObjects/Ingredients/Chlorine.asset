@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chlorine
   m_EditorClassIdentifier: 
   id: Cl_2-
-  color: {r: 0.8980392, g: 0.81330574, b: 0.12941174, a: 0.48235294}
+  color: {r: 0.8980392, g: 0.81330574, b: 0.12941174, a: 0.3137255}
   concentration: 3
   state: 2
   craftable: 1

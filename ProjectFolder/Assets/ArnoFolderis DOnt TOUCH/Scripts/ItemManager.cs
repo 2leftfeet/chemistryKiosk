@@ -55,8 +55,8 @@ public class ItemManager : MonoBehaviour
 
         if (closest)
         {
-            closest.gameObject.GetComponent<IHoldsIngredient>().AddIngredient(ingredient);
-            ingredient = null;
+            if(closest.gameObject.GetComponent<IHoldsIngredient>().AddIngredient(ingredient))
+                ingredient = null;
         }
 
 
