@@ -73,8 +73,10 @@ public class TaskCreator : MonoBehaviour
     }
 
     void EndTask(int i){
+        ingredientsGenerator.RemoveIngredients(currentTasks[i].taskData);
         currentTaskCount--;
         Destroy(currentTasks[i].gameObject);
         currentTasks[i] = null;
+        
     }
 }
