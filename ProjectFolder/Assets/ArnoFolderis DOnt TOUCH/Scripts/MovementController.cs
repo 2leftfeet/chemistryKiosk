@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MovementController : MonoBehaviour
 {
+    Animator animator;
     public int playerNumber = 0;
     public float movementSpeed = 10f;
     [SerializeField]
@@ -18,7 +19,7 @@ public class MovementController : MonoBehaviour
 
     void Start()
     {
-
+        animator = gameObject.GetComponent<Animator>();
         // THIS IS FOR DEBUGING DONT FORGET TO DELETE
 
         //horizontalName += playerNumber;
@@ -67,14 +68,16 @@ public class MovementController : MonoBehaviour
 
         if (movementDirectionalSpeed.magnitude > 0)
         {
+            animator.SetBool("isWalking", true);
             if (movementDirectionalSpeed.magnitude >= 1)
                 MoveObject(movementSpeed * 1, movementDirection);   // 1 is maximum magnitude 
             else
                 MoveObject(movementSpeed * movementDirectionalSpeed.magnitude, movementDirection);
-        }
+        }else
+            animator.SetBool("isWalking", false);
 
 
-        
+
     }
 
     void LookThere(Vector3 direction)
