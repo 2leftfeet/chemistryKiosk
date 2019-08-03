@@ -11,7 +11,7 @@ public class Task : MonoBehaviour
 
     void Start(){
         timeLeft = taskData.baseTime;
-        toMake = taskData.endProduct;
+     
     }
     void Update(){
         timeLeft -= Time.deltaTime;
