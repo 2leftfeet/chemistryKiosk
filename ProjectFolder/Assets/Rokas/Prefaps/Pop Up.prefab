@@ -33,7 +33,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -130,7 +130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3341686068490729614
 RectTransform:
   m_ObjectHideFlags: 0
@@ -140,7 +140,7 @@ RectTransform:
   m_GameObject: {fileID: 3341686068490729618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 1}
   m_Children:
   - {fileID: 3341686068934862653}
   - {fileID: 3341686068792346454}
@@ -233,16 +233,16 @@ MonoBehaviour:
   orderIngredient: {fileID: 3341686068792346448}
   grad:
     serializedVersion: 2
-    key0: {r: 0.6603774, g: 0, b: 0, a: 1}
-    key1: {r: 0.8182249, g: 1, b: 0, a: 1}
-    key2: {r: 0.072806716, g: 1, b: 0, a: 0}
+    key0: {r: 1, g: 0, b: 0, a: 1}
+    key1: {r: 0.86399996, g: 1, b: 0, a: 1}
+    key2: {r: 0, g: 0.9528302, b: 0.054387804, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 34310
+    ctime1: 31226
     ctime2: 65535
     ctime3: 0
     ctime4: 0
@@ -272,7 +272,6 @@ GameObject:
   - component: {fileID: 3341686068792346454}
   - component: {fileID: 3341686068792346451}
   - component: {fileID: 3341686068792346448}
-  - component: {fileID: 3341686068792346449}
   m_Layer: 5
   m_Name: Order Text
   m_TagString: Untagged
@@ -397,13 +396,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 3341686068792346448}
-    characterCount: 11
+    characterCount: 0
     spriteCount: 0
     spaceCount: 0
-    wordCount: 1
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -420,18 +419,6 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &3341686068792346449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3341686068792346455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87ba04b5401807b42b85600f05b5150c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3341686068924266566
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,13 +830,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 3341686069252622686}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
     spaceCount: 0
-    wordCount: 1
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
