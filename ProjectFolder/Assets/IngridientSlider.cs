@@ -8,33 +8,17 @@ public class IngridientSlider : MonoBehaviour
 {
     public Slider Timer;
 
-    private float time;
-    public float timeToComplete; // Base Time
-
     public Gradient grad;
     public Image image;
     void Start()
     {
-        time = 0;
-        Timer.maxValue = timeToComplete;
         Timer.value = 0;
     }
-    void Update()
-    {
-        time += Time.deltaTime;
-        Timer.value = time;
-
-        image.color = grad.Evaluate(time / timeToComplete);
-
-        if (Timer.value == timeToComplete)
-        {
-            IngridientFinish();
-        }
+   
+    public void SetValue(float t, float maxTime){
+        Timer.value = t;
+        Timer.maxValue = maxTime;
+        image.color = grad.Evaluate(t /maxTime);
     }
 
-    void IngridientFinish()
-    {
-        Debug.Log("Finish");
-        Destroy(this.gameObject);
-    }
 }
