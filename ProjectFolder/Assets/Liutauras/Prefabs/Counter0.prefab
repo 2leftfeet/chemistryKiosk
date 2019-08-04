@@ -369,6 +369,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick Up Bubble
       objectReference: {fileID: 0}
+    - target: {fileID: 2344836915539425276, guid: 7b8035c4ad7273247a8fe7bc43258663,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
       propertyPath: m_LocalPosition.x

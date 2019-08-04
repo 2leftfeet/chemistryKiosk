@@ -200,7 +200,7 @@ PrefabInstance:
     - target: {fileID: 3341686068490729614, guid: 3ede7407c839f6243973efe6546b7379,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3341686068490729614, guid: 3ede7407c839f6243973efe6546b7379,
         type: 3}
@@ -414,7 +414,7 @@ PrefabInstance:
     - target: {fileID: 3341686068490729614, guid: 3ede7407c839f6243973efe6546b7379,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3341686068490729614, guid: 3ede7407c839f6243973efe6546b7379,
         type: 3}
@@ -1980,6 +1980,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180.00002
       objectReference: {fileID: 0}
+    - target: {fileID: 7443630952928372460, guid: fd699e22ec93b734a951a8805a22114f,
+        type: 3}
+      propertyPath: ingredient
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055529776926962936, guid: fd699e22ec93b734a951a8805a22114f,
+        type: 3}
+      propertyPath: ingredientDatainstance
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1745728810936473587, guid: fd699e22ec93b734a951a8805a22114f,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2502,6 +2512,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443630952928372460, guid: fd699e22ec93b734a951a8805a22114f,
+        type: 3}
+      propertyPath: ingredient
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055529776926962936, guid: fd699e22ec93b734a951a8805a22114f,
+        type: 3}
+      propertyPath: ingredientDatainstance
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd699e22ec93b734a951a8805a22114f, type: 3}
@@ -6128,6 +6148,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180.00002
       objectReference: {fileID: 0}
+    - target: {fileID: 7443630952928372460, guid: fd699e22ec93b734a951a8805a22114f,
+        type: 3}
+      propertyPath: ingredient
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055529776926962936, guid: fd699e22ec93b734a951a8805a22114f,
+        type: 3}
+      propertyPath: ingredientDatainstance
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1745728810936473587, guid: fd699e22ec93b734a951a8805a22114f,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7082,6 +7112,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443630952928372460, guid: fd699e22ec93b734a951a8805a22114f,
+        type: 3}
+      propertyPath: ingredient
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055529776926962936, guid: fd699e22ec93b734a951a8805a22114f,
+        type: 3}
+      propertyPath: ingredientDatainstance
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1745728810936473587, guid: fd699e22ec93b734a951a8805a22114f,
         type: 3}
@@ -10542,8 +10582,8 @@ MonoBehaviour:
   - {fileID: 1469903675}
   - {fileID: 1430567302}
   - {fileID: 1771855316}
-  minWaitTime: 20
-  maxWaitTime: 30
+  minWaitTime: 2
+  maxWaitTime: 3
 --- !u!4 &1633772556
 Transform:
   m_ObjectHideFlags: 0
