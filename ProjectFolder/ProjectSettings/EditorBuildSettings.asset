@@ -14,13 +14,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Liutauras/Scenes/LiutaurasTestScene.unity
     guid: d6861801b9f907c4bb5d2f80b80ab85c
-  - enabled: 1
-    path: Assets/Liutauras/Scenes/MainSceneWorking.unity
-    guid: 806c63d8da3719e4bab479e5a3cc521b
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Liutauras/Scenes/LiutaurasTestScene 1 - Copy.unity
-    guid: f05c46cf33650aa4280938a96384de6f
   m_configObjects: {}

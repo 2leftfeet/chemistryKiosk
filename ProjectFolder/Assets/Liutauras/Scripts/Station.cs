@@ -15,7 +15,8 @@ public enum StationType
     PorousBedOfActivatedCarbon,
     GasInputter,
     ConicalFlask,
-    Counter
+    Counter,
+    Freezer
 }
 
 public class Station : MonoBehaviour, IHoldsIngredient
