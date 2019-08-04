@@ -18,7 +18,7 @@ GameObject:
   m_TagString: Station
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8490045627366562864
 Transform:
@@ -134,7 +134,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8457603089034236510
 Transform:
@@ -162,6 +162,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: testtube_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 80541a57ea790c9499511a9ba9379aff,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 80541a57ea790c9499511a9ba9379aff,
         type: 3}
@@ -258,6 +263,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: testtube_1
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 80541a57ea790c9499511a9ba9379aff,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 80541a57ea790c9499511a9ba9379aff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -353,46 +363,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: IngridientGUI
       objectReference: {fileID: 0}
-    - target: {fileID: 5169899892205789877, guid: 83c36d963bd8d06409e203f8c768db59,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5169899892205789877, guid: 83c36d963bd8d06409e203f8c768db59,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5169899892205789877, guid: 83c36d963bd8d06409e203f8c768db59,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5169899892205789877, guid: 83c36d963bd8d06409e203f8c768db59,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 437893027558706208, guid: 83c36d963bd8d06409e203f8c768db59,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 437893027558706208, guid: 83c36d963bd8d06409e203f8c768db59,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 437893027558706208, guid: 83c36d963bd8d06409e203f8c768db59,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 437893027558706208, guid: 83c36d963bd8d06409e203f8c768db59,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4065537356812687501, guid: 83c36d963bd8d06409e203f8c768db59,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -406,7 +376,7 @@ PrefabInstance:
     - target: {fileID: 4065537356812687501, guid: 83c36d963bd8d06409e203f8c768db59,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.804
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 4065537356812687501, guid: 83c36d963bd8d06409e203f8c768db59,
         type: 3}
@@ -451,12 +421,12 @@ PrefabInstance:
     - target: {fileID: 4065537356812687501, guid: 83c36d963bd8d06409e203f8c768db59,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 4065537356812687501, guid: 83c36d963bd8d06409e203f8c768db59,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 4065537356812687501, guid: 83c36d963bd8d06409e203f8c768db59,
         type: 3}
@@ -507,6 +477,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.03255536
+      objectReference: {fileID: 0}
+    - target: {fileID: 437893025780102142, guid: 83c36d963bd8d06409e203f8c768db59,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.89009
+      objectReference: {fileID: 0}
+    - target: {fileID: 437893025780102142, guid: 83c36d963bd8d06409e203f8c768db59,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.89009
+      objectReference: {fileID: 0}
+    - target: {fileID: 437893025780102142, guid: 83c36d963bd8d06409e203f8c768db59,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.89009
+      objectReference: {fileID: 0}
+    - target: {fileID: 437893025780102142, guid: 83c36d963bd8d06409e203f8c768db59,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -6.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83c36d963bd8d06409e203f8c768db59, type: 3}
@@ -673,11 +663,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.0049999994
       objectReference: {fileID: 0}
-    - target: {fileID: 3407191757983592737, guid: e3e015703bce9a24cb89d99776ac568c,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e015703bce9a24cb89d99776ac568c, type: 3}
 --- !u!1 &5177385615036779886 stripped
@@ -703,6 +688,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: testtube_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 80541a57ea790c9499511a9ba9379aff,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 80541a57ea790c9499511a9ba9379aff,
         type: 3}
