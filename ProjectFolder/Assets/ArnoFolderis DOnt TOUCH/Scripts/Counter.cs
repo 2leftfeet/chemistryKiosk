@@ -11,16 +11,33 @@ public class Counter : MonoBehaviour, IHoldsIngredient
 
     [SerializeField] bool conveyorCounter = false;
     [SerializeField] bool isInTheScene = false;
+    private LayerMask playerMask;
+    public float showRadius;
 
     void Start()
     {
         myIngredientHandler = gameObject.GetComponent<IngredientHandler>();
         if (ingredient) bubhan.UpdateGUI(ingredient);
+        playerMask = LayerMask.GetMask("Players");
     }
 
     public bool IsInScene()
     {
         return isInTheScene;
+    }
+
+    void Update(){
+        if(ingredient){
+            Collider[] playerCollisions = Physics.OverlapSphere(transform.position, showRadius, playerMask);
+            if(playerCollisions.Length == 0){
+                bubhan.enabled = false;
+            }
+            else{
+                bubhan.enabled = true;
+            }
+        }else{
+            bubhan.enabled = false;
+        }
     }
 
 
