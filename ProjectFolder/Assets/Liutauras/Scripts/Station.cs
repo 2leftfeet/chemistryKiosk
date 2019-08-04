@@ -32,6 +32,9 @@ public class Station : MonoBehaviour, IHoldsIngredient
 
     public BubbleHandler BubHan1;
     public BubbleHandler BubHan2;
+    public GameObject ingredientGUI;
+    public GameObject sliderGUI;
+    private IngridientSlider slider;
     //ROKO KODAS BAIGIASI PHEW
 
     public float craftingTime = 7.0f;
@@ -42,16 +45,21 @@ public class Station : MonoBehaviour, IHoldsIngredient
     void Start() {
         ingredientSlots = new Ingredient[slotCount];
         craftingTimer = craftingTime;
+        slider = sliderGUI.GetComponent<IngridientSlider>();
     }
 
     void Update() {
         if(isCrafting){
             if(craftingTimer > 0.0f){
                 craftingTimer -= Time.deltaTime;
+                slider.SetValue(craftingTime - craftingTimer, craftingTime);
+
             }
             else{
                 isCrafting = false;
                 craftingTimer = craftingTime;
+                ingredientGUI.SetActive(true);
+                sliderGUI.SetActive(false);
             }
         }
     }
@@ -137,6 +145,8 @@ public class Station : MonoBehaviour, IHoldsIngredient
             j++;
         }
         isCrafting = true;
+        ingredientGUI.SetActive(false);
+        sliderGUI.SetActive(true);
     }
 
     private void UpdateBubbles()
