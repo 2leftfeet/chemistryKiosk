@@ -44,8 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c42e480e4e7df040bf9bc771f76021f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalScore: 0
   activePlayers: 00
-  playerPrefab: {fileID: 6193723159144423365, guid: fc79c5b86280dee4c8731fdd67c3a23b,
+  playerPrefab: {fileID: 7888515372445676936, guid: 38820a8a34423b246811d5f6d1218e53,
     type: 3}
   spawn:
   - {fileID: 0}
@@ -64,5 +65,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55e7def573e85c745a5af9896562aec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: {fileID: 0}
+  TimerGO: []
+  Checkmarks: []
   activePlayers: 00
+  waitAmount: 0.5
   gameManager: {fileID: 181373643136657489}
+  sceneName: movementScene

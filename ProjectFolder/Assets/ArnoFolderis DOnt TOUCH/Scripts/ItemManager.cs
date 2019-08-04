@@ -7,6 +7,8 @@ public class ItemManager : MonoBehaviour
     IngredientHandler ingredientHandler;
     public Ingredient ingredient;
 
+    [SerializeField] Animator animator;
+
     private string useName = "Place";
     
     [SerializeField]
@@ -63,8 +65,12 @@ public class ItemManager : MonoBehaviour
 
         if (closest)
         {
-            if(closest.gameObject.GetComponent<IHoldsIngredient>().AddIngredient(ingredient))
+            if (closest.gameObject.GetComponent<IHoldsIngredient>().AddIngredient(ingredient))
+            {
                 ingredient = null;
+                if (animator)
+                    animator.SetBool("isCarying", false);
+            }
         }
 
 
@@ -92,7 +98,20 @@ public class ItemManager : MonoBehaviour
 
         if (closest)
         {
-            return closest.gameObject.GetComponent<IHoldsIngredient>().RemoveIngredient();
+            
+            var _temp = closest.gameObject.GetComponent<IHoldsIngredient>().RemoveIngredient();
+            if (animator)
+            {
+                if (_temp)
+                {
+                    animator.SetBool("isCarying", true);
+                }
+                else
+                {
+                    animator.SetBool("isCarying", false);
+                }
+            }
+            return _temp;
         }
 
 

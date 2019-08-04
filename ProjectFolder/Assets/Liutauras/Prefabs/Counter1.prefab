@@ -19,7 +19,7 @@ GameObject:
   m_TagString: Station
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6456010246434707915
 Transform:
@@ -150,11 +150,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick Up Bubble
       objectReference: {fileID: 0}
-    - target: {fileID: 2344836915539425276, guid: 7b8035c4ad7273247a8fe7bc43258663,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -168,27 +163,27 @@ PrefabInstance:
     - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.83
       objectReference: {fileID: 0}
     - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.96331143
       objectReference: {fileID: 0}
     - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.26838613
       objectReference: {fileID: 0}
     - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
@@ -198,27 +193,27 @@ PrefabInstance:
     - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 31.137001
       objectReference: {fileID: 0}
     - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 179.99998
       objectReference: {fileID: 0}
     - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 179.99998
       objectReference: {fileID: 0}
     - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
@@ -260,25 +255,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2344836915637772729, guid: 7b8035c4ad7273247a8fe7bc43258663,
+    - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 7
+      propertyPath: m_LocalScale.x
+      value: 0.021282
       objectReference: {fileID: 0}
-    - target: {fileID: 2344836915637772729, guid: 7b8035c4ad7273247a8fe7bc43258663,
+    - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
+      propertyPath: m_LocalScale.y
+      value: 0.021282
       objectReference: {fileID: 0}
-    - target: {fileID: 2344836915637772729, guid: 7b8035c4ad7273247a8fe7bc43258663,
+    - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2344836915637772729, guid: 7b8035c4ad7273247a8fe7bc43258663,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_LocalScale.z
+      value: 1.0641
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b8035c4ad7273247a8fe7bc43258663, type: 3}
