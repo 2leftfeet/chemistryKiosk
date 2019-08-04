@@ -7,5 +7,5 @@ public interface IHoldsIngredient
 {
     bool AddIngredient(Ingredient toAdd);
     Ingredient RemoveIngredient();
-    void SetUI(bool on);
+    //void SetUI(bool on);
 }
