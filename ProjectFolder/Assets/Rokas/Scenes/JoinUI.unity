@@ -961,7 +961,7 @@ PrefabInstance:
     - target: {fileID: 5521095972227362609, guid: 667ac0ab7c051774984340c631996d50,
         type: 3}
       propertyPath: sceneName
-      value: LiutaurasTestScene 1
+      value: MainSceneWorking
       objectReference: {fileID: 0}
     - target: {fileID: 5521095972227362609, guid: 667ac0ab7c051774984340c631996d50,
         type: 3}
