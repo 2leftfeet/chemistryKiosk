@@ -55,11 +55,12 @@ public class Counter : MonoBehaviour, IHoldsIngredient
                 ingredient = _ingredient;
                 added = true;
                 isInTheScene = false;
+                if (_ingredient) bubhan.UpdateGUI(_ingredient);
                 break;
             }
         }
         //add UI hook
-        if(_ingredient) bubhan.UpdateGUI(_ingredient);
+        
         //UpdateBubbles();
         myIngredientHandler.ChangeShape(ingredient);
         return added;
@@ -75,11 +76,12 @@ public class Counter : MonoBehaviour, IHoldsIngredient
                 ingredient = _ingredient;
                 added = true;
                 isInTheScene = false;
+                if (bubhan) bubhan.UpdateGUI(ingredient);
                 break;
             }
         }
         //add UI hook
-        if (_ingredient) bubhan.UpdateGUI(_ingredient);
+        /*if (_ingredient)*/ 
         //UpdateBubbles();
         myIngredientHandler.ChangeShape(ingredient);
         return added;
@@ -94,14 +96,14 @@ public class Counter : MonoBehaviour, IHoldsIngredient
                 Ingredient toReturn = ingredient;
                 ingredient = null;
                 //add UI hook
-                /*if (ingredient)*/ bubhan.UpdateGUI(ingredient);
+                /*if (ingredient)*/ if(bubhan) bubhan.UpdateGUI(ingredient);
                 //UpdateBubbles();
                 myIngredientHandler.ChangeShape(ingredient);
                 return toReturn;
             }
         }
         //add UI hook
-        /*if (ingredient)*/ bubhan.UpdateGUI(ingredient);
+        if (ingredient) bubhan.UpdateGUI(ingredient);
         //UpdateBubbles();
         myIngredientHandler.ChangeShape(ingredient);
         return null;
