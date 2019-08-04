@@ -48,6 +48,7 @@ public class MovementController : MonoBehaviour
     public Vector3 movementDirection;
     public Vector3 movementDirectionalSpeed;
 
+    Quaternion temp;
 
     void Update()
     {
@@ -63,8 +64,8 @@ public class MovementController : MonoBehaviour
 
         // get direction and normalize it
         movementDirection = Vector3.Normalize(movementDirectionalSpeed);
-
-        LookThere(movementDirection);
+        Vector3 Gohere  = Vector3.Lerp(transform.forward, movementDirection, 0.3f);
+        LookThere(Gohere);
 
         if (movementDirectionalSpeed.magnitude > 0)
         {
