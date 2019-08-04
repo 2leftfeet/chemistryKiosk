@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c8c05852525593442af5e1fbf383648a
+guid: 7af837af17852de4cbff9d0b4a55cfd5
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
@@ -7,13 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: wall_material
-    second: {fileID: 2100000, guid: 2e3f2ff8231648b4ca2f995d0a3d9dde, type: 2}
+      name: newspaper_mat
+    second: {fileID: 2100000, guid: 9edf3cdb46dd84f41a96ab31a7824bc1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: wall_window_material
-    second: {fileID: 2100000, guid: 0cdf09c24fe60af449a6f3a1b3bdb640, type: 2}
+      name: trashcan
+    second: {fileID: 2100000, guid: a9d3cdd358c45f3408aff432e472b04f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

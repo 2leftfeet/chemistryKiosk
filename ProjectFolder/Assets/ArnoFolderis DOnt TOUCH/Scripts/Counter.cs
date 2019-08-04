@@ -22,10 +22,33 @@ public class Counter : MonoBehaviour, IHoldsIngredient
         return isInTheScene;
     }
 
+
+
     public bool AddIngredient(Ingredient _ingredient)
     {
+        if (conveyorCounter)
+            return false;
         bool added = false;
         
+        for (int i = 0; i < slotCount; i++)
+        {
+            if (ingredient == null)
+            {
+                ingredient = _ingredient;
+                added = true;
+                isInTheScene = false;
+                break;
+            }
+        }
+        //add UI hook
+        //UpdateBubbles();
+        myIngredientHandler.ChangeShape(ingredient);
+        return added;
+    }
+
+    public bool GenerateIngredient(Ingredient _ingredient)
+    {
+        bool added = false;
         for (int i = 0; i < slotCount; i++)
         {
             if (ingredient == null)
@@ -58,7 +81,7 @@ public class Counter : MonoBehaviour, IHoldsIngredient
         }
         //add UI hook
         //UpdateBubbles();
-        //myIngredientHandler.ChangeShape(ingredient);
+        myIngredientHandler.ChangeShape(ingredient);
         return null;
     }
 
@@ -75,6 +98,14 @@ public class Counter : MonoBehaviour, IHoldsIngredient
         if (other.tag == "SceneConveyor")
         {
             isInTheScene = false;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "SceneConveyor")
+        {
+
         }
     }
 
