@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028471, g: 0.22571605, b: 0.3069229, a: 1}
+  m_IndirectSpecularColor: {r: 0.18345203, g: 0.22741252, b: 0.29649085, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -96,7 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
-  m_LightingDataAsset: {fileID: 112000000, guid: 39c1e56d01149784f8f81ff9274e86ed,
+  m_LightingDataAsset: {fileID: 112000000, guid: 89c13c118a5963241bf8b7151fb16200,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -2573,18 +2573,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.00001
       objectReference: {fileID: 0}
-    - target: {fileID: 7443630952928372460, guid: fd699e22ec93b734a951a8805a22114f,
-        type: 3}
-      propertyPath: ingredient
-      value: 
-      objectReference: {fileID: 11400000, guid: 399da4e0ee095634887c218c3f2aaa4d,
-        type: 2}
-    - target: {fileID: 7055529776926962936, guid: fd699e22ec93b734a951a8805a22114f,
-        type: 3}
-      propertyPath: ingredientDatainstance
-      value: 
-      objectReference: {fileID: 11400000, guid: 399da4e0ee095634887c218c3f2aaa4d,
-        type: 2}
     - target: {fileID: 2344836915425112248, guid: fd699e22ec93b734a951a8805a22114f,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2630,6 +2618,18 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7443630952928372460, guid: fd699e22ec93b734a951a8805a22114f,
+        type: 3}
+      propertyPath: ingredient
+      value: 
+      objectReference: {fileID: 11400000, guid: 399da4e0ee095634887c218c3f2aaa4d,
+        type: 2}
+    - target: {fileID: 7055529776926962936, guid: fd699e22ec93b734a951a8805a22114f,
+        type: 3}
+      propertyPath: ingredientDatainstance
+      value: 
+      objectReference: {fileID: 11400000, guid: 399da4e0ee095634887c218c3f2aaa4d,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd699e22ec93b734a951a8805a22114f, type: 3}
 --- !u!1001 &273457668
@@ -8865,6 +8865,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 4495755289792732155, guid: 81772639257b67849b31ffbece09a6f3,
+        type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81772639257b67849b31ffbece09a6f3, type: 3}
 --- !u!1001 &1214917507
@@ -9418,6 +9423,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646863770519412484, guid: f3015e22c960a664c926dba1f493915b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3015e22c960a664c926dba1f493915b, type: 3}

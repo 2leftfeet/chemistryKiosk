@@ -28,6 +28,7 @@ public class Station : MonoBehaviour, IHoldsIngredient
     public Ingredient[] ingredientSlots;
 
     //ROKO KODAS ATSARGIAI
+    //NUCLEAR WASTE
 
 
     public BubbleHandler BubHan1;
@@ -40,12 +41,14 @@ public class Station : MonoBehaviour, IHoldsIngredient
     public float craftingTime = 7.0f;
     private float craftingTimer;
     private bool isCrafting;
-
+    public float showRadius = 1.0f;
+    private LayerMask playerMask;
 
     void Start() {
         ingredientSlots = new Ingredient[slotCount];
         craftingTimer = craftingTime;
         slider = sliderGUI.GetComponent<IngridientSlider>();
+        playerMask = LayerMask.GetMask("Players");
     }
 
     void Update() {
@@ -61,6 +64,18 @@ public class Station : MonoBehaviour, IHoldsIngredient
                 ingredientGUI.SetActive(true);
                 sliderGUI.SetActive(false);
             }
+        }
+        else{
+            sliderGUI.SetActive(false);
+            if(HeldIngredientCount() == 0){
+                ingredientGUI.SetActive(false);
+                
+                
+                }
+            else{
+                ingredientGUI.SetActive(true);
+            }
+        
         }
     }
 
