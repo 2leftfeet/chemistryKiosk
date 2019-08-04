@@ -435,11 +435,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick Up Bubble
       objectReference: {fileID: 0}
-    - target: {fileID: 2344836915539425276, guid: 7b8035c4ad7273247a8fe7bc43258663,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2344836915539425216, guid: 7b8035c4ad7273247a8fe7bc43258663,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -550,32 +545,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1556395976}
-    - target: {fileID: 2344836915539425217, guid: 7b8035c4ad7273247a8fe7bc43258663,
-        type: 3}
-      propertyPath: ing
-      value: 
-      objectReference: {fileID: 11400000, guid: b8a01ffdb52a292499f26130795ef28b,
-        type: 2}
-    - target: {fileID: 2344836915647351131, guid: 7b8035c4ad7273247a8fe7bc43258663,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.16862746
-      objectReference: {fileID: 0}
-    - target: {fileID: 2344836915647351131, guid: 7b8035c4ad7273247a8fe7bc43258663,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.49411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 2344836915647351131, guid: 7b8035c4ad7273247a8fe7bc43258663,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.043137256
-      objectReference: {fileID: 0}
-    - target: {fileID: 2344836915647351131, guid: 7b8035c4ad7273247a8fe7bc43258663,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.62352943
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b8035c4ad7273247a8fe7bc43258663, type: 3}
 --- !u!1001 &3341686068437565021

@@ -198,7 +198,6 @@ MonoBehaviour:
   solidSec: {fileID: 21300000, guid: 723320d1dcb276747a3a63fbd40ea482, type: 3}
   gas: {fileID: 21300000, guid: 6e4363b13529da041ac25b2a32e7a5a9, type: 3}
   gasSec: {fileID: 21300000, guid: 169dade8c32a95143aee22ebb6a360c2, type: 3}
-  ing: {fileID: 11400000, guid: 84d8808fc3a0ae24cbb7337caa1e5175, type: 2}
   formula: {fileID: 2344836915637772729}
 --- !u!1 &2344836915637772730
 GameObject:
@@ -415,7 +414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
+  m_Color: {r: 0.16862746, g: 0.49411765, b: 0.043137256, a: 0.62352943}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
