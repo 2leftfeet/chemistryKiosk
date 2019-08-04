@@ -28,25 +28,38 @@ public class Station : MonoBehaviour, IHoldsIngredient
     public Ingredient[] ingredientSlots;
 
     //ROKO KODAS ATSARGIAI
-    public GameObject ingredientGUI;
-    //public GameObject Slider;
+
 
     public BubbleHandler BubHan1;
     public BubbleHandler BubHan2;
     //ROKO KODAS BAIGIASI PHEW
 
+    public float craftingTime = 7.0f;
+    private float craftingTimer;
+    private bool isCrafting;
+
 
     void Start() {
         ingredientSlots = new Ingredient[slotCount];
+        craftingTimer = craftingTime;
     }
 
     void Update() {
-
+        if(isCrafting){
+            if(craftingTimer > 0.0f){
+                craftingTimer -= Time.deltaTime;
+            }
+            else{
+                isCrafting = false;
+                craftingTimer = craftingTime;
+            }
+        }
     }
 
 
 
     public bool AddIngredient(Ingredient ingredient) {
+        if(isCrafting) return false;
         bool added = false;
         for (int i = 0; i < slotCount; i++) {
             if (ingredientSlots[i] == null) {
@@ -61,6 +74,7 @@ public class Station : MonoBehaviour, IHoldsIngredient
     }
 
     public Ingredient RemoveIngredient() {
+        if(isCrafting) return null;
         for (int i = slotCount - 1; i >= 0; i--) {
             if (ingredientSlots[i]) {
                 Ingredient toReturn = ingredientSlots[i];
@@ -122,6 +136,7 @@ public class Station : MonoBehaviour, IHoldsIngredient
             ingredientSlots[j] = ingredient;
             j++;
         }
+        isCrafting = true;
     }
 
     private void UpdateBubbles()
