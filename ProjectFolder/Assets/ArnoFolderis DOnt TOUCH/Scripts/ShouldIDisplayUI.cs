@@ -6,13 +6,22 @@ public class ShouldIDisplayUI : MonoBehaviour
 {
     // get palyer reference
     GameObject[] players;
+   
 
     [SerializeField]
     float displayDistance = 5f;
 
+    IHoldsIngredient holder;
+
     void Start()
     {
         players = GameObject.FindGameObjectsWithTag("Player");
+        holder = GetComponent<IHoldsIngredient>();
+    }
+
+    void Update()
+    {
+        
     }
 
     public bool ShouldIdisplay(Vector3 _position)
