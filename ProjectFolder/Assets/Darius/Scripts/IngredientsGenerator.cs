@@ -93,10 +93,10 @@ public class IngredientsGenerator : MonoBehaviour
                     addedIngredient.count = 1;
                     for (int b = 0; b < conveyorCounters.Count; b++)
                     {
-                        if(conveyorCounters[b].ingredient == null &&  !conveyorCounters[b].IsInScene())
+                        if(conveyorCounters[b].ingredient == null &&  !conveyorCounters[b].IsInScene() )
                         {
                             addedIngredient.dedicatedCounter = conveyorCounters[b];
-                            conveyorCounters[b].AddIngredient(addedIngredient.ingredient);
+                            conveyorCounters[b].GenerateIngredient(addedIngredient.ingredient);
                             break;
                         }
                     }
@@ -127,7 +127,7 @@ public class IngredientsGenerator : MonoBehaviour
             {
                 if (!neededIngredients[i].dedicatedCounter.IsInScene() && neededIngredients[i].dedicatedCounter.ingredient == null)
                 {
-                    neededIngredients[i].dedicatedCounter.AddIngredient(neededIngredients[i].ingredient);
+                    neededIngredients[i].dedicatedCounter.GenerateIngredient(neededIngredients[i].ingredient);
                 }
             }
 
