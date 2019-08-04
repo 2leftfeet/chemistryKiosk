@@ -12,11 +12,10 @@ public class Game : MonoBehaviour
     [SerializeField]
     bool[] activePlayers = { false };
 
-    
     private int playerCount = 4;
 
     [SerializeField]
-    GameObject playerPrefab;
+    GameObject[] playerPrefab;
 
     [SerializeField]
     Transform[] spawn;
@@ -44,7 +43,7 @@ public class Game : MonoBehaviour
         {
             if (players[i])
             {
-                GameObject go = Instantiate(playerPrefab);
+                GameObject go = Instantiate(playerPrefab[i]);
                 go.GetComponent<MovementController>().SetPlayerNumber(i);
                 if(spawngos[i])
                     go.transform.position = spawngos[i].transform.position;
