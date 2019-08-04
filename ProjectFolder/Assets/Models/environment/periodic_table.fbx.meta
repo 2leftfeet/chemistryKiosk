@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8fdcc88eb6d9acd4b9b3b9a451242438
+guid: 583edb5b530e0e941a51631ab328031f
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: wall_wood
-    second: {fileID: 2100000, guid: 593ec76d0359d3a4b88aa2abc0ef8b88, type: 2}
+      name: PERIODIC_TABLE
+    second: {fileID: 2100000, guid: a9ba8247b99247943ad1b75f016d347d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2100000, guid: fd6f0abcc34da8842bfe46ce495c81a8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
