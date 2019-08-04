@@ -74,10 +74,10 @@ LightmapSettings:
     m_MixedBakeMode: 2
     m_BakeBackend: 2
     m_PVRSampling: 1
-    m_PVRDirectSampleCount: 32
-    m_PVRSampleCount: 500
+    m_PVRDirectSampleCount: 16
+    m_PVRSampleCount: 200
     m_PVRBounces: 2
-    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentSampleCount: 200
     m_PVREnvironmentReferencePointCount: 2048
     m_PVRFilteringMode: 2
     m_PVRDenoiserTypeDirect: 0
@@ -14560,11 +14560,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1811036878, guid: 95d66da4920a87d4792d84b15217c603, type: 3}
       propertyPath: m_Intensity
-      value: 36.44
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1811036878, guid: 95d66da4920a87d4792d84b15217c603, type: 3}
       propertyPath: m_Lightmapping
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1811036878, guid: 95d66da4920a87d4792d84b15217c603, type: 3}
       propertyPath: m_BounceIntensity
