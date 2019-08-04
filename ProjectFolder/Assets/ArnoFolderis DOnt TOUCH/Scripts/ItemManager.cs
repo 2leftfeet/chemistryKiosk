@@ -50,7 +50,7 @@ public class ItemManager : MonoBehaviour
         Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, radius);
         foreach( Collider c in hitColliders)
         {
-            if (c.CompareTag("Station"))
+            if (c.CompareTag("Station") || c.CompareTag("OutputBox"))
             {
                 temp = Vector3.Distance(c.transform.position, gameObject.transform.position);
                 if (tofar > temp)
@@ -79,7 +79,7 @@ public class ItemManager : MonoBehaviour
         Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, radius);
         foreach (Collider c in hitColliders)
         {
-            if (c.CompareTag("Station"))
+            if (c.CompareTag("Station") || c.CompareTag("OutputBox"))
             {
                 temp = Vector3.Distance(c.transform.position, gameObject.transform.position);
                 if (tofar > temp)

@@ -79,6 +79,7 @@ public class Station : MonoBehaviour, IHoldsIngredient
         foreach (Recipe r in recipeHolder.allRecipes) {
             bool recipeCorrect = true;
             if (r.stationToUse == stationType) {
+                if(r.inputIngredients.Count != HeldIngredientCount()) continue;
                 foreach (Ingredient ingredient in r.inputIngredients) {
                     bool contains = false;
                     for (int i = 0; i < slotCount; i++) {
@@ -101,6 +102,14 @@ public class Station : MonoBehaviour, IHoldsIngredient
                 ConvertIngredients(r);
             }
         }
+    }
+
+    int HeldIngredientCount(){
+        int result = 0;
+        for(int i = 0; i < slotCount; i++){
+            if(ingredientSlots[i]) result++;
+        }
+        return result;
     }
 
     void ConvertIngredients(Recipe r) {
