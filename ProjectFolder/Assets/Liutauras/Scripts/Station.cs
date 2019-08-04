@@ -66,15 +66,16 @@ public class Station : MonoBehaviour, IHoldsIngredient
             }
         }
         else{
+            sliderGUI.SetActive(false);
             if(HeldIngredientCount() == 0){
-                Collider[] playerCollisions = Physics.OverlapSphere(transform.position, showRadius, playerMask);
-                if(playerCollisions.Length == 0){
-                    ingredientGUI.SetActive(false);
+                ingredientGUI.SetActive(false);
+                
+                
                 }
-                else{
-                    ingredientGUI.SetActive(true);
-                }
+            else{
+                ingredientGUI.SetActive(true);
             }
+        
         }
     }
 
