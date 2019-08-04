@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Counter : MonoBehaviour, IHoldsIngredient
 {
-
+    public BubbleHandler bubhan;
     public Ingredient ingredient;
     private IngredientHandler myIngredientHandler;
     [SerializeField] private int slotCount = 1;
@@ -41,6 +41,7 @@ public class Counter : MonoBehaviour, IHoldsIngredient
             }
         }
         //add UI hook
+        bubhan.UpdateGUI(_ingredient);
         //UpdateBubbles();
         myIngredientHandler.ChangeShape(ingredient);
         return added;
