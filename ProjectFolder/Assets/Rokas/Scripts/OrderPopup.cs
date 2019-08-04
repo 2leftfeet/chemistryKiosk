@@ -12,7 +12,6 @@ public class OrderPopup : MonoBehaviour
     public TMP_Text NpcName;
     public TMP_Text orderIngredient;
 
-
     public Gradient grad;
     public Image image;
     private Task currentTask;
@@ -35,6 +34,7 @@ public class OrderPopup : MonoBehaviour
     void UpdatePopup(float currentTime, float maxTime)
     {
         image.color = grad.Evaluate(currentTime/maxTime);
-        
+        NpcName.text = currentTask.taskData.npcName;
+
     }
 }
