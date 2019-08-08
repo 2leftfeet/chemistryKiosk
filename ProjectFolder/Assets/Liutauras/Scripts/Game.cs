@@ -30,7 +30,6 @@ public class Game : MonoBehaviour
 
     [SerializeField]
     GameObject endScreen;
-    
 
     public static Game instance;
 
@@ -62,7 +61,7 @@ public class Game : MonoBehaviour
 
     public void StartGame(bool[] players)
     {
-        totalScore = StartingScore;
+        //totalScore = StartingScore;
         countingScore = true;
         GameObject[] spawngos = GameObject.FindGameObjectsWithTag("SpawnPoint");
         // had coding playercount
@@ -97,28 +96,47 @@ public class Game : MonoBehaviour
         }
     }
 
-    //int temp = 0;
+    public float amountOfTimeYouCannotDoStuffWhenYouDie = 1.0f;
+    
 
     void FixedUpdate()
     {
-
-     /*   if(temp > 100)
-        {
-            temp = 0;
-            AddScore(-1);
-        }
-        temp++;*/
+         if(amountOfTimeYouCannotDoStuffWhenYouDie > 0)
+           {
+            amountOfTimeYouCannotDoStuffWhenYouDie -=  0.02f;
+           }
     }
+
+    private void Update()
+    {
+        if (ranOnce)
+        {
+            if (Input.anyKey && amountOfTimeYouCannotDoStuffWhenYouDie <= 0)
+            {
+                SceneManager.LoadScene("StartMenu", LoadSceneMode.Single);
+                Destroy(this.gameObject);
+            }
+        }
+
+    }
+
+    bool ranOnce = false;
+
+    [SerializeField] TMP_Text[] 死後沈黙する時;
 
     void EndGame()
     {
-        GameObject _endScreen = Instantiate(endScreen);
-        TMP_Text[] endScreenText;
-        if (_endScreen)
-            endScreenText  = _endScreen.GetComponents<TMP_Text>();
-
-        //SceneManager.LoadScene("StartMenu", LoadSceneMode.Single);
-        //Destroy(this.gameObject);
+        if (!ranOnce)
+        {
+            ranOnce = true;
+            GameObject _endScreen = Instantiate(endScreen);
+           ;
+            if (_endScreen)
+            {
+                死後沈黙する時 = _endScreen.GetComponentsInChildren<TMP_Text>();
+                死後沈黙する時[2].text += (" " + totalScore);
+            }
+        }
     }
 
 
