@@ -28,6 +28,10 @@ public class Game : MonoBehaviour
     [SerializeField]
     TMP_Text livesText;
 
+    [SerializeField]
+    GameObject endScreen;
+    TMP_Text[] endScreenText;
+
     public static Game instance;
 
     private void Awake()
@@ -70,7 +74,6 @@ public class Game : MonoBehaviour
                     go.transform.position = spawngos[i].transform.position;
             }
         }
-
         livesText = GameObject.FindGameObjectWithTag("LivesText").GetComponent<TMP_Text>();
         scoreText = GameObject.FindGameObjectWithTag("ScoreText").GetComponent<TMP_Text>();
     }
@@ -91,7 +94,7 @@ public class Game : MonoBehaviour
         }
     }
 
-    int temp = 0;
+    //int temp = 0;
 
     void FixedUpdate()
     {
@@ -105,8 +108,12 @@ public class Game : MonoBehaviour
 
     void EndGame()
     {
-        SceneManager.LoadScene("StartMenu", LoadSceneMode.Single);
-        Destroy(this.gameObject);
+        Instantiate(endScreen);
+
+
+
+        //SceneManager.LoadScene("StartMenu", LoadSceneMode.Single);
+        //Destroy(this.gameObject);
     }
 
 

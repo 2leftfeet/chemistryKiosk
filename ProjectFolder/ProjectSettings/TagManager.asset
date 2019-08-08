@@ -10,6 +10,7 @@ TagManager:
   - SceneConveyor
   - LivesText
   - ScoreText
+  - LossScreen
   layers:
   - Default
   - TransparentFX
