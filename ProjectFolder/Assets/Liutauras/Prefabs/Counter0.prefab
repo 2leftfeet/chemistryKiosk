@@ -103,6 +103,7 @@ MonoBehaviour:
   slotCount: 1
   conveyorCounter: 0
   isInTheScene: 0
+  showRadius: 3
 --- !u!114 &-5233346795125815728
 MonoBehaviour:
   m_ObjectHideFlags: 0

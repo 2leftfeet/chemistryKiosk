@@ -412,6 +412,7 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   image: {fileID: 3341686067589342778}
+  background: {fileID: 3341686068934862652}
 --- !u!1 &3341686068792346455
 GameObject:
   m_ObjectHideFlags: 0
