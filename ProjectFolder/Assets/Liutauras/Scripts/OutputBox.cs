@@ -10,8 +10,16 @@ public class OutputBox : MonoBehaviour, IHoldsIngredient
     
     public OrderPopup orderPopup;
 
+    void Update()
+    {
+        if (!currentTask)
+        {
+            orderPopup.gameObject.SetActive(false);
+        }
+    }
+
     public bool AddIngredient(Ingredient toAdd){
-        if(!placedIngredient){
+        if(toAdd == currentTask.taskData.endProduct){
             placedIngredient = toAdd;
         }else{
             return false;

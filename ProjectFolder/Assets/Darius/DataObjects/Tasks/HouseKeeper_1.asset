@@ -20,7 +20,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 36ad94a15e85787469b752af4f46b567, type: 2}
   - {fileID: 11400000, guid: 04535356dcda9f94ab433adc0bdd04ae, type: 2}
   endProduct: {fileID: 11400000, guid: bc4220718ddae6d4d8538bed9bbc9058, type: 2}
-  baseTime: 100
-  customerPrefab: {fileID: 0}
+  baseTime: 70
   npcName: Housekeeper
   popupColor: {r: 0.745283, g: 0.6102371, b: 0.40428087, a: 0}

@@ -11,6 +11,7 @@ public class TaskCreator : MonoBehaviour
     public Task[] currentTasks;
     public OutputBox[] outputBoxes;
 
+
     public float minWaitTime = 20.0f;
     public float maxWaitTime = 30.0f;
     private float waiter;
@@ -65,18 +66,31 @@ public class TaskCreator : MonoBehaviour
     void CheckTasks(){
         for(int i = 0; i < 3; i++){
             if(currentTasks[i]){
-                if(currentTasks[i].isCompleted()){
-                    EndTask(i);
+                Completion com = currentTasks[i].getCompletion();
+                if(com != Completion.InProgress){
+                    EndTask(i, com);
                 }
             }
         }
     }
 
-    void EndTask(int i){
+    void EndTask(int i, Completion completion){
+
+        switch (completion)
+        {
+            case Completion.Completed:
+                Game.instance.AddScore((int)currentTasks[i].timeLeft);
+                break;
+            case Completion.Failed:
+                Game.instance.RemoveLife();
+                break;
+            default:
+                break;
+        }
+        
         ingredientsGenerator.RemoveIngredients(currentTasks[i].taskData);
         currentTaskCount--;
         Destroy(currentTasks[i].gameObject);
         currentTasks[i] = null;
-        
     }
 }

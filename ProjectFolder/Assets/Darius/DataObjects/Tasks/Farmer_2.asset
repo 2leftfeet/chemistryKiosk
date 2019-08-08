@@ -20,7 +20,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4c4118ea30417584683366761392601c, type: 2}
   - {fileID: 11400000, guid: 399da4e0ee095634887c218c3f2aaa4d, type: 2}
   endProduct: {fileID: 11400000, guid: 51a6f03cafd61314181e53f81633c26c, type: 2}
-  baseTime: 100
-  customerPrefab: {fileID: 0}
+  baseTime: 70
   npcName: Farmer
   popupColor: {r: 0.76237273, g: 0.9150943, b: 0.375534, a: 0}

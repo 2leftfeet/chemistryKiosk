@@ -2,31 +2,45 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum Completion
+{
+    InProgress,
+    Completed,
+    Failed
+}
+
 public class Task : MonoBehaviour
 {
     public TaskData taskData;
     public float timeLeft;
-    private bool completed = false;
+    public TaskCreator taskCreator;
+    private Completion completion; 
    
 
 
     void Start(){
         timeLeft = taskData.baseTime;
+        completion = Completion.InProgress;
      
     }
     void Update(){
         timeLeft -= Time.deltaTime;
+        if(timeLeft < 0.0f)
+        {
+            FailTask();
+        }
     }
 
     public void CompleteTask(){
         Debug.Log("task completed");
-        completed = true;
+        completion = Completion.Completed;
+        
     }
 
-    public bool isCompleted(){return completed;}
+    public Completion getCompletion(){return completion;}
 
     void FailTask(){
-
+        completion = Completion.Failed;
     }
 
 }

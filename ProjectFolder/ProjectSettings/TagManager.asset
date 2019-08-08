@@ -8,6 +8,8 @@ TagManager:
   - OutputBox
   - SpawnPoint
   - SceneConveyor
+  - LivesText
+  - ScoreText
   layers:
   - Default
   - TransparentFX
