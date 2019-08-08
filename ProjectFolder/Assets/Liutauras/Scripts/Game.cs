@@ -30,9 +30,11 @@ public class Game : MonoBehaviour
 
     [SerializeField]
     GameObject endScreen;
-    TMP_Text[] endScreenText;
+    
 
     public static Game instance;
+
+    bool endedd;
 
     private void Awake()
     {
@@ -98,6 +100,7 @@ public class Game : MonoBehaviour
 
     void FixedUpdate()
     {
+
      /*   if(temp > 100)
         {
             temp = 0;
@@ -108,9 +111,10 @@ public class Game : MonoBehaviour
 
     void EndGame()
     {
-        Instantiate(endScreen);
-
-
+        GameObject _endScreen = Instantiate(endScreen);
+        TMP_Text[] endScreenText;
+        if (_endScreen)
+            endScreenText  = _endScreen.GetComponents<TMP_Text>();
 
         //SceneManager.LoadScene("StartMenu", LoadSceneMode.Single);
         //Destroy(this.gameObject);
