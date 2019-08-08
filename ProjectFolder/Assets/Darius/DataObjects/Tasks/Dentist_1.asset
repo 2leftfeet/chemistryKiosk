@@ -24,4 +24,4 @@ MonoBehaviour:
   endProduct: {fileID: 11400000, guid: 7bfa5e9ef60444b41a3daf3f559c1f72, type: 2}
   baseTime: 70
   npcName: Dentist
-  popupColor: {r: 0.43921322, g: 0.6671716, b: 0.8867924, a: 0}
+  popupColor: {r: 0.43921322, g: 0.6671716, b: 0.8867924, a: 0.69803923}
