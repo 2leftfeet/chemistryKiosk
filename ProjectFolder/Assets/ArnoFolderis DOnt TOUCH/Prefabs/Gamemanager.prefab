@@ -44,15 +44,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c42e480e4e7df040bf9bc771f76021f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalScore: 0
   activePlayers: 00
-  playerPrefab: {fileID: 7888515372445676936, guid: 38820a8a34423b246811d5f6d1218e53,
-    type: 3}
+  playerPrefab:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   spawn:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  scoreText: {fileID: 0}
+  livesText: {fileID: 0}
+  endScreen: {fileID: 7379496341464455134, guid: a757d1c44b4034d4da95e3fd1cdd5dfb,
+    type: 3}
 --- !u!114 &5521095972227362609
 MonoBehaviour:
   m_ObjectHideFlags: 0
