@@ -37,6 +37,7 @@ public class GetReadyControlers : MonoBehaviour
         getReadyControlers = gameManager.GetComponent<GetReadyControlers>();
         DontDestroyOnLoad(this.gameObject);
         activePlayers = new bool[4];
+        //SceneManager.sceneLoaded;
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
     // Update is called once per frame
@@ -85,6 +86,10 @@ public class GetReadyControlers : MonoBehaviour
             gameManager.StartGame(activePlayers);
             Destroy(getReadyControlers);
         }
+    }
+
+    void OnDestroy(){
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
 }
