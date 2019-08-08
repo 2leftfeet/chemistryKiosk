@@ -86,6 +86,7 @@ public class Game : MonoBehaviour
         scoreText.text = "SCORE: " + totalScore.ToString();
     }
 
+    [ContextMenu("Remove One Life")]
     public void RemoveLife()
     {
         totalLives--;

@@ -22,4 +22,4 @@ MonoBehaviour:
   endProduct: {fileID: 11400000, guid: 51a6f03cafd61314181e53f81633c26c, type: 2}
   baseTime: 70
   npcName: Farmer
-  popupColor: {r: 0.76237273, g: 0.9150943, b: 0.375534, a: 0}
+  popupColor: {r: 0.76237273, g: 0.9150943, b: 0.375534, a: 0.69803923}
