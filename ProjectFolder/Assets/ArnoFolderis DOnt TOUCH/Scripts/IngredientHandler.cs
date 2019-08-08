@@ -62,9 +62,9 @@ public class IngredientHandler : MonoBehaviour
             {
                 case State.Solid:
                     solidGO.SetActive(true);
-                    renderer[0].GetPropertyBlock(_propBlock);
+                    renderer[2].GetPropertyBlock(_propBlock);
                     _propBlock.SetColor("_Color", ingredientData.color);
-                    renderer[0].SetPropertyBlock(_propBlock);
+                    renderer[2].SetPropertyBlock(_propBlock);
                     break;
                 case State.Liquid:
                     liquidGO.SetActive(true);
@@ -74,9 +74,9 @@ public class IngredientHandler : MonoBehaviour
                     break;
                 case State.Gas:
                     gasGO.SetActive(true);
-                    renderer[2].GetPropertyBlock(_propBlock);
+                    renderer[0].GetPropertyBlock(_propBlock);
                     _propBlock.SetColor("_Color", ingredientData.color);
-                    renderer[2].SetPropertyBlock(_propBlock);
+                    renderer[0].SetPropertyBlock(_propBlock);
                     break;
                 default:
                     break;
